@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Draweer from './MG/drawer';
+// import Drawer from './MG/drawer';
 
 function App() {
   return (
     <div>
-     <Draweer/>
+     {/* <Drawer/> */}
     </div>
   );
 }
