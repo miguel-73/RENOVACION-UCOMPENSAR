@@ -3,8 +3,17 @@ import React from 'react'
 
 function EncabezadoDetalles() {
   return (
-    <Box sx={{position:'relative',bgcolor:'rgba(33, 70, 88)', borderRadius:6, height:36, width:'97%'}}>
-      <Typography sx={{position:'relative',color:'#ffffff', left:20,top:8}}>
+    <Box 
+    sx={{
+      position:'relative',
+      bgcolor:'rgba(33, 70, 88)',
+      borderRadius:6, 
+      height:33,
+      width:'97%',
+      marginTop:2.5,
+      marginLeft:1,
+      }}>
+      <Typography sx={{position:'relative',fontSize:15,color:'#ffffff', left:20,top:6}}>
         Detalles
       </Typography>
     </Box>
