@@ -1,34 +1,15 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
-import { AutoComplete } from "primereact/autocomplete";
-import TipoEntrada from './TipoEntrada';
-import Fechaa from './Fechaa';
-import { InputText } from "primereact/inputtext";
-import Entrada from './Entrada';
-export default function NumeFechEntra() {
+export default function CustomizedInputs() {
     return (
         <>
-        
-
-            <Box
-                sx={{
-                    
-                    display: 'flex',
-                    alignItems: 'center',
-                    '& > :not(style)': { m: 1 }, 
-                    height:100
-                }}
-                >
-                <InputText
-                    type="text"
-                    placeholder="Numero Entrada"
+            <div className="App">
+                <TextField
+                    id="outlined-error"
+                    label="Numero Entrada"
+                    defaultValue=""
                     required
-                    />  
-                    
-                <Fechaa />
-                <Entrada/>
-            </Box>
+                />
+            </div>
         </>
     );
 }

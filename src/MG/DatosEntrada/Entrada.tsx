@@ -1,11 +1,9 @@
-import * as React from 'react';
-import { Theme, useTheme } from '@mui/material/styles';
-import OutlinedInput from '@mui/material/OutlinedInput';
+import FormControl from '@mui/material/FormControl';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
+import OutlinedInput from '@mui/material/OutlinedInput';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
-
+import * as React from 'react';
 const ITEM_HEIGHT = 48;
 const ITEM_PADDING_TOP = 8;
 const MenuProps = {
@@ -16,11 +14,10 @@ const MenuProps = {
     },
   },
 };
-
 const names = [
   'Miguel angel',
   'German Andres',
-  'April Tucker',
+  'jhon fredy',
   'Ralph Hubbard',
   'Omar Alexander',
   'Carlos Abbott',
@@ -29,20 +26,8 @@ const names = [
   'Virginia Andrews',
   'Kelly Snyder',
 ];
-
-function getStyles(name: string, personName: string[], theme: Theme) {
-  return {
-    fontWeight:
-      personName.indexOf(name) === -1
-        ? theme.typography.fontWeightRegular
-        : theme.typography.fontWeightMedium,
-  };
-}
-
 export default function Entrada() {
-  const theme = useTheme();
   const [personName, setPersonName] = React.useState<string[]>([]);
-
   const handleChange = (event: SelectChangeEvent<typeof personName>) => {
     const {
       target: { value },
@@ -52,11 +37,23 @@ export default function Entrada() {
       typeof value === 'string' ? value.split(',') : value,
     );
   };
-
   return (
-    <div>
-      <FormControl sx={{ m: 1, width: 200 , }}>
-        <InputLabel id="demo-multiple-name-label">Seleccione</InputLabel>
+    <>
+      <FormControl
+      // style={{
+      //   left: '79%',
+      //   top: '-77px',
+
+      // }}
+      >
+        <InputLabel
+          style={{
+            // flexGrow: 1,
+            // left: '79%',
+            top: '-7px',
+
+          }}
+          id="demo-multiple-name-label">Seleccione</InputLabel>
         <Select
           labelId="demo-multiple-name-label"
           id="demo-multiple-name"
@@ -65,21 +62,21 @@ export default function Entrada() {
           onChange={handleChange}
           input={<OutlinedInput label="Name" />}
           MenuProps={MenuProps}
-          
+          style={{ width: 200, height: 39, }} // establece el ancho del componente Select
+          required
         >
           {names.map((name) => (
             <MenuItem
               key={name}
               value={name}
-              style={getStyles(name, personName, theme)}
+            // style={{ width: '100%' }} // establece el ancho del elemento MenuItem al 100%
             >
               {name}
             </MenuItem>
           ))}
         </Select>
       </FormControl>
-    </div>
+    </>
   );
 }
 
-        
