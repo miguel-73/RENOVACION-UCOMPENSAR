@@ -11,7 +11,7 @@ export default function CuadroPrimerApellido() {
       sx={{
         position: "absolute",
         border: 0,
-        top: 120,
+        top: 130,
         left: 285,
       }}>
         <div className="card flex justify-content-center">

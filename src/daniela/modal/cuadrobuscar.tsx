@@ -8,7 +8,7 @@ export default function CuadroBuscar() {
          <Box  sx={{
             position: "absolute",
             border: 0,
-            top: 220,
+            top: 10,
             left: 55,
           }}>
             

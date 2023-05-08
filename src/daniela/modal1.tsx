@@ -10,6 +10,9 @@ import CuadroPrimerApellido from './modal/cuadropapellido';
 import BottonBuscar from './modal/botonbuscar';
 import CuadroBuscar from './modal/cuadrobuscar';
 import BotonArchivo from './modal/botondocumento';
+import BotonEnlaceExterno from './modal/botonenlace';
+import BotonDeFiltrar from './modal/botonfiltrar';
+import { Box} from '@mui/material';
 
 
 export default function ModalPantalla1() {
@@ -25,8 +28,22 @@ export default function ModalPantalla1() {
                <TextoPrimerApellido/>
                <CuadroPrimerApellido/>
                <BottonBuscar/>
-               <CuadroBuscar/>
+               <Box   sx={{
+            border:1,
+            position: "absolute",
+            borderColor: "black", 
+            top: 160,
+            left: -19, 
+            margin:4,
+            width: "98%",       //ancho
+            height: "66%"}}>
+                <CuadroBuscar/>
                <BotonArchivo/>
+               <BotonEnlaceExterno/>
+               <BotonDeFiltrar/>
+               </Box>
+               
+               
             </Sidebar>
             
             <Button icon="pi pi-th-large" onClick={() => setVisible(true)} />
