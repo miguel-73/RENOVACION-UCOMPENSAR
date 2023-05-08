@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
-import {ProductData} from './ProductData'
+import {ProductData} from './ProductData';
+import "../StyleComponents/styleComponents.css"
+
 
 
 
@@ -34,7 +36,7 @@ const TableData = () => {
 
 
   return (
-            <DataTable value={products} size='small' paginator rows={5} paginatorRight removableSort tableStyle={{ minWidth: '50rem' }}>
+            <DataTable value={products} size='small' paginator rows={5}  paginatorClassName='pagi-style' removableSort tableStyle={{ minWidth: '50rem' }}>
                 <Column field="code" header="Código" sortable style={{ width: '25%',fontSize:12 }}></Column>
                 <Column field="name" header="Nombre" sortable style={{ width: '25%',fontSize:12 }}></Column>
                 <Column field="quantity" header="Cantidad" sortable style={{ width: '25%',fontSize:12 }}></Column>
