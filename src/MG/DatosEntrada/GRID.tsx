@@ -4,6 +4,7 @@ import Fechaa from './Fechaa';
 import Entrada from './Entrada';
 import CustomizedInputs from './NumeFechEntra';
 import MotivoObser from './MotivoObser';
+import React from 'react';
 export default function AutoGrid() {
     return (
         <>
