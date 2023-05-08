@@ -7,7 +7,7 @@ import SearchIcon from '@mui/icons-material/Search';
 export const FileUploadButton = () => {
   const [selectedFile, setSelectedFile] = useState(null);
 
-  const handleFileSelect = (event) => {
+  const handleFileSelect = (event: { target: { files: any[]; }; }) => {
     const file = event.target.files[0];
     setSelectedFile(file);
   };
