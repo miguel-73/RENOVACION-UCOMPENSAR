@@ -1,0 +1,16 @@
+.inputText {
+    width: 18ch;
+    height:3.5ch;
+}
+
+.inputTextDisabled {
+    width: 18ch;
+    height:3.5ch;
+    
+}
+
+.texto {
+    font-size:10px;
+    color: rgb(135, 132, 132);
+    
+}
