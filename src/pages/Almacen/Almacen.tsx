@@ -4,8 +4,9 @@ import EncabezadoDetalles from './components/EncabezadoDetalles'
 import {TextInput} from '../../common/TextInput/TextInput'
 import {TextInputDisabled} from '../../common/TextInput/TextInput'
 import { BotonBusquedaAvanzada } from '../../common/BotonBusquedaAvanzada/BotonBusquedaAvanzada'
+import TableData from './components/DataTable/TableData'
 
-function Almacen() {
+const Almacen = () => {
   return (
     <Box 
     sx={{
@@ -17,6 +18,7 @@ function Almacen() {
         borderRadius:3,
         top:50,
         
+        
         }}>
 
       <Grid container >
@@ -25,26 +27,26 @@ function Almacen() {
         </Grid>
       </Grid>
 
-      <Grid container>
-        <Grid item xs={2} sx={{display:'flex',marginTop:1,border:1 }}>
+      <Grid container sx={{marginLeft:1}}>
+        <Grid item xs={2} sx={{display:'flex',marginTop:1}}>
           <TextInput id='CodigoBien' text='Codigo del bien:*'/>
         </Grid>
 
-        <Grid item xs={2} sx={{display:'flex', marginTop:1,border:1 }}>
+        <Grid item xs={2} sx={{display:'flex', marginTop:1 }}>
           <TextInputDisabled id='NombreArticulo' text='Nombre del artículo:*'/>
         </Grid>
 
-        <Grid item xs={2} sx={{display:'flex', marginTop:1,border:1}}>
+        <Grid item xs={2} sx={{display:'flex', marginTop:1}}>
           <TextInput id='Cantidad' text='Cantidad:*'/>
         </Grid>
 
-        <Grid item xs={2} sx={{display:'flex', marginTop:1,border:1}}>
+        <Grid item xs={2} sx={{display:'flex', marginTop:1}}>
           <TextInput id='Bodega' text='Bodega:*'/>
         </Grid>
 
       </Grid>
 
-      <Grid container >
+      <Grid container sx={{marginLeft:1}}>
 
         <Grid item xs={2} sx={{display:'flex', marginTop:1}}>
           <TextInput id='PocentajeIva' text='Porcentaje de IVA:*'/>
@@ -64,7 +66,7 @@ function Almacen() {
 
       </Grid>
 
-      <Grid container direction='row' justifyContent="flex-end" >
+      <Grid container direction='row' justifyContent="flex-end" sx={{marginLeft:1}}>
 
         <Grid item xs={2} sx={{display:'flex', marginTop:1 }}>
           <TextInputDisabled id='ValorTotalEntrada' text='Valor Total Entrada:*'/>
@@ -76,18 +78,29 @@ function Almacen() {
 
       </Grid>
 
-      <Grid container >
-        <Grid item xs={12}>
-          <Typography>
-            tabla <br/>
-            tabla <br/>
-            tabla <br/>
-            tabla <br/>
-            tabla <br/>
-            tabla <br/>
-            tabla <br/>
-            tabla
-          </Typography>
+      {/* Espacio para la tabla */}
+      <Grid container sx={{border:1, borderColor:'blue'}}>
+        <Grid container sx={{m:1, border:1, borderColor:'green'}}>
+
+          <Grid item xs={4}  sx={{border:1,borderColor:'red' ,m:1, display:'flex'}}  >
+            <Grid item xs={2} >
+              Filtrer
+            </Grid>
+            <Grid item xs={2}>
+              Buscar
+            </Grid>
+            <Grid item xs={2}>
+              Icon
+            </Grid>
+            <Grid item xs={2}>
+              Icon
+            </Grid>
+          </Grid>
+
+          <Grid item xs={12} sx={{border:1, borderColor:'red'}}>
+            <TableData/> 
+          </Grid>
+
         </Grid>
       </Grid>
 
@@ -96,4 +109,4 @@ function Almacen() {
   )
 }
 
-export default Almacen
+export default Almacen;

@@ -1,7 +1,7 @@
 import { Box, Typography } from '@mui/material'
 import React from 'react'
 
-function EncabezadoDetalles() {
+const EncabezadoDetalles = () => {
   return (
     <Box 
     sx={{
