@@ -6,10 +6,9 @@ import { Box } from '@mui/material';
 
 function App() {
   return (
-    <Box>
-      {/* <SideBar/> */}
-      <Almacen/>
-    </Box>
+    <div>
+      
+    </div>
   );
 }
 
