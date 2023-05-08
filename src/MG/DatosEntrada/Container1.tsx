@@ -1,9 +1,7 @@
 import * as React from 'react';
 import { Container } from '@mui/material';
 import ContPeque from './ContPeque';
-import NumeFechEntra from './NumeFechEntra';
-import MotivoObser from './MotivoObser';
-
+import AutoGrid from './GRID';
 export default function Container1() {
     return (
         <Container maxWidth="lg"
@@ -18,8 +16,7 @@ export default function Container1() {
             }}
         >
             <ContPeque />
-            <NumeFechEntra />
-            <MotivoObser/>
+            <AutoGrid />
         </Container>
     );
 }

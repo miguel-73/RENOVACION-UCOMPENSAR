@@ -1,7 +1,6 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
-
 export default function MotivoObser() {
     return (
         <>
@@ -9,14 +8,13 @@ export default function MotivoObser() {
                 sx={{
                     width: "100%",
                     maxWidth: '100%',
-                    borderBottom: "1px solid #ccc",
                     paddingBottom: "16px",
                 }}
             >
-                <TextField 
-                    fullWidth 
-                    label="Motivo" 
-                    id="campo1" 
+                <TextField
+                    fullWidth
+                    label="Motivo"
+                    id="campo1"
                     required
                 />
             </Box>
@@ -26,10 +24,10 @@ export default function MotivoObser() {
                     maxWidth: '100%',
                 }}
             >
-                <TextField 
-                    fullWidth 
-                    label="Observaciones" 
-                    id="campo2" 
+                <TextField
+                    fullWidth
+                    label="Observaciones"
+                    id="campo2"
                     required
                 />
             </Box>
