@@ -10,7 +10,7 @@ function EncabezadoDetalles() {
       borderRadius:6, 
       height:33,
       width:'97%',
-      marginTop:2.5,
+      marginTop:2,
       marginLeft:1,
       }}>
       <Typography sx={{position:'relative',fontSize:15,color:'#ffffff', left:20,top:6}}>
