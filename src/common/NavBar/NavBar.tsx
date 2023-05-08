@@ -1,9 +1,7 @@
 import React from "react";
-
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Drawer from "../Drawer";
-
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import MuiAppBar, { AppBarProps as MuiAppBarProps } from "@mui/material/AppBar";
