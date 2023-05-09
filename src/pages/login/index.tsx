@@ -5,7 +5,7 @@ export const LoginPage = () => {
   return (
     <Box sx={{ mt:9 }} maxWidth="xl">
       <Button fullWidth variant='contained'>
-        Login
+        Hola Login
       </Button>
     </Box>
   )

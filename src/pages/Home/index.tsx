@@ -5,7 +5,7 @@ export const HomePage:React.FC<{}> = () => {
   return (
     <Box sx={{ mt:9 }} maxWidth="xl">
       <Button fullWidth variant='contained'>
-        Hola mundo
+        Hola Home
       </Button>
     </Box>
   )
