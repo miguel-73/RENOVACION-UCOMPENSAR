@@ -1,4 +1,4 @@
-import { Box, Grid, Typography } from '@mui/material'
+import { Box, Grid } from '@mui/material'
 import React from 'react'
 import EncabezadoDetalles from './components/EncabezadoDetalles'
 import {TextInput} from '../../common/TextInput/TextInput'
@@ -12,11 +12,11 @@ const Almacen = () => {
     sx={{
         position:'relative',
         left:280,
-        maxWidth:'78%',
+        
         border:1,
         borderColor:'grey.500',
         borderRadius:3,
-        top:50,
+        mt:9
         
         
         }}>
