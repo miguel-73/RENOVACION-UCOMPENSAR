@@ -6,10 +6,7 @@ import { Grid } from '@mui/material';
 function App() {
   return (
     <Grid>
-
-     <ParteStiven />
-
-
+      
     </Grid>
   );
 }
