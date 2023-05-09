@@ -11,7 +11,7 @@ const Almacen = () => {
     <Box 
     sx={{
         position:'relative',
-        left:280,
+        
         
         border:1,
         borderColor:'grey.500',
