@@ -6,8 +6,9 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import MuiAppBar, { AppBarProps as MuiAppBarProps } from "@mui/material/AppBar";
 import { styled } from "@mui/material/styles";
-import { ToggleDark } from "./components/ToggleDark";
+import { ToggleDark } from './components/ToggleDark';
 import ToggleNotifications from "./components/ToggleNotifications";
+import { Outlet } from "react-router-dom";
 
 const drawerWidth: string = "20vw";
 
@@ -55,6 +56,10 @@ function Nav() {
   const [openBrowser, setOpenBrowser] = React.useState(false);
 
   const [openMobile, setOpenMobile] = React.useState(false);
+ 
+  
+  
+  
 
   const handleDrawerOpenMobile = () => {
     setOpenMobile(!openMobile);
@@ -74,10 +79,10 @@ function Nav() {
   }, [mobile]);
 
   return (
-    <Box>
+    <Box sx={{display:"flex"}}>
       <AppBar
         position="fixed"
-        sx={{ background: "white", height: "10vh" }}
+        sx={{ background: "white", height: "10vh", display:'flex' }}
         openBrowser={openBrowser}
       >
         <Toolbar>
@@ -112,6 +117,19 @@ function Nav() {
         Open={mobile ? openMobile : openBrowser}
         drawerWidth={drawerWidth}
       ></Drawer>
+      <Box
+          sx={{
+            
+            display:'block',
+            height: '100vh',
+            width: openBrowser?`calc(100vw - 22vw) !important`:'100vw',
+            marginLeft:openBrowser?'21.5vw':1,
+            marginRight:1
+          }}
+          className={darkMode?'dark-mode':'light-mode'}
+        >
+          <Outlet/>
+          </Box>
     </Box>
   );
 }
