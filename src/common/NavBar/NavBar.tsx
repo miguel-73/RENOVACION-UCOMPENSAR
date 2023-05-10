@@ -1,7 +1,7 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-import Drawer from "../Drawer";
+import Drawer from "./Drawer";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import MuiAppBar, { AppBarProps as MuiAppBarProps } from "@mui/material/AppBar";
@@ -9,6 +9,7 @@ import { styled } from "@mui/material/styles";
 import { ToggleDark } from './components/ToggleDark';
 import ToggleNotifications from "./components/ToggleNotifications";
 import { Outlet } from "react-router-dom";
+
 
 const drawerWidth: string = "20vw";
 
@@ -23,6 +24,7 @@ const AppBar = styled(MuiAppBar, {
   borderRadius: "10px",
   marginTop: 5,
   width: "98.8vw",
+  marginLeft:'none',
   transition: theme.transitions.create(["margin", "width"], {
     easing: theme.transitions.easing.sharp,
     duration: theme.transitions.duration.leavingScreen,
@@ -116,7 +118,8 @@ function Nav() {
         Tipo={mobile ? "temporary" : "persistent"}
         Open={mobile ? openMobile : openBrowser}
         drawerWidth={drawerWidth}
-      ></Drawer>
+      >
+      </Drawer>
       <Box
           sx={{
             

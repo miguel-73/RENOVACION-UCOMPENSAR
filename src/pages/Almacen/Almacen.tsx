@@ -1,5 +1,5 @@
 import { Box, Grid } from '@mui/material'
-import React from 'react'
+import React from 'react'                                                                                                                                                                                                                                                                                                                                                                                               
 import EncabezadoDetalles from './components/EncabezadoDetalles'
 import {TextInput} from '../../common/TextInput/TextInput'
 import {TextInputDisabled} from '../../common/TextInput/TextInput'
@@ -11,16 +11,11 @@ const Almacen = () => {
     <Box 
     sx={{
         position:'relative',
-        
-        
         border:1,
         borderColor:'grey.500',
         borderRadius:3,
         mt:9
-        
-        
         }}>
-
       <Grid container >
         <Grid item xs={12} sx={{display:'flex'}}>
             <EncabezadoDetalles/>
