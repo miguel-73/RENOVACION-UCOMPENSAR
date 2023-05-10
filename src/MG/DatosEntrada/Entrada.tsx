@@ -43,7 +43,6 @@ export default function Entrada() {
       // style={{
       //   left: '79%',
       //   top: '-77px',
-
       // }}
       >
         <InputLabel

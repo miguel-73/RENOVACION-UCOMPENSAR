@@ -7,6 +7,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import FormatColorResetIcon from '@mui/icons-material/FormatColorReset';
 
 export default function ContainedButtons() {
+  
   return (
     <Stack direction="row" spacing={3}>
       <Button variant="outlined" endIcon={<FormatColorResetIcon/>} sx={{
@@ -16,6 +17,7 @@ export default function ContainedButtons() {
         background: "#144F7A",
       }}>BUSCAR</Button>
       <Button variant="contained" color="error" endIcon={<ClearIcon />}>ANULAR</Button>
+      
       <Button variant="contained" color="success" endIcon={<SaveOutlinedIcon />} sx={{
         background: "#27D312",
       }}>GUARDAR</Button>

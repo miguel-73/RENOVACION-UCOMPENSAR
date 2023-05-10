@@ -1,22 +1,19 @@
 import * as React from 'react';
-import { Container } from '@mui/material';
+import { Box, Container } from '@mui/material';
 import ContPeque from './ContPeque';
 import AutoGrid from './GRID';
 export default function Container1() {
     return (
-        <Container maxWidth="lg"
+        <Box maxWidth="lg"
             sx={{
                 borderRadius: "12px",
-                position: "relative",
-                maxWidth: '100vw !important',
-                pb: 69,
-                boxShadow: 6,
-                border: 4,
-                height: '100vh'
-            }}
+                 pb: 4,
+                 border: 2,
+                 boxShadow: "12px 13px 5px rgba(0, 0, 0, 0.3)"
+             }}
         >
             <ContPeque />
             <AutoGrid />
-        </Container>
+        </Box>
     );
 }
