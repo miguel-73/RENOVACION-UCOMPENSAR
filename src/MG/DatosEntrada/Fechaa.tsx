@@ -6,7 +6,6 @@ export default function Fechaa() {
 
     return (
         <>
-            {/* <Box sx={{ position: "absolute", }}> */}
             <Calendar
                 disabled placeholder="Fecha Actual"
                 value={date}
@@ -15,7 +14,6 @@ export default function Fechaa() {
             // style={{  top: '26px', }}
             >
             </Calendar>
-            {/* </Box> */}
         </>
     )
 }

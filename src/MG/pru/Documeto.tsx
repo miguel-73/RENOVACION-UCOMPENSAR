@@ -1,37 +1,7 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
-import MenuItem from '@mui/material/MenuItem';
 import SearchIcon from '@mui/icons-material/Search';
 import { FormControl, InputAdornment } from '@mui/material';
-
-const bodegas = [
-  {
-    value: 'B1',
-    label: 'Bodega 1',
-  },
-  {
-    value: 'B2',
-    label: 'Bodega 2',
-  },
-  {
-    value: 'B3',
-    label: 'Bodega 3',
-  },
-]
-
-const currencies = [
-  {
-    value: 'CC',
-    label: 'Cedula de Ciudadania',
-  },
-  {
-    value: 'CE',
-    label: 'Cedula Extranjera',
-  },
-
-];
-
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
 export default function Documeto() {
   return (
     <>
@@ -59,7 +29,8 @@ export default function Documeto() {
                     <SearchIcon />
                   </InputAdornment>
                 ),
-              }}          
+              }}
+              placeholder="cardgo"
             />
           </FormControl>
         </div>

@@ -1,10 +1,6 @@
-import * as React from 'react';
 import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
 import MenuItem from '@mui/material/MenuItem';
-import SearchIcon from '@mui/icons-material/Search';
-import { FormControl, InputAdornment } from '@mui/material';
-
+import TextField from '@mui/material/TextField';
 const currencies = [
   {
     value: 'CC',
@@ -14,13 +10,10 @@ const currencies = [
     value: 'CE',
     label: 'Cedula Extranjera',
   },
-
 ];
-
 export default function TipoDeDocumento() {
   return (
     <>
-
       <Box
         component="form"
         sx={{

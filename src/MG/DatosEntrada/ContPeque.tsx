@@ -18,13 +18,13 @@ export default function ContPeque() {
             }}
             >
                 <Typography variant="h6" sx={{
-            position: "absolute",
-            top: "5px",
-            left: "3%",
-            color: "#ffffff"
-        }}>
-            Datos De La Entrada Del Bien 
-        </Typography>
+                    position: "absolute",
+                    top: "5px",
+                    left: "3%",
+                    color: "#ffffff"
+                }}>
+                    Datos De La Entrada Del Bien
+                </Typography>
             </Container>
         </>
     );

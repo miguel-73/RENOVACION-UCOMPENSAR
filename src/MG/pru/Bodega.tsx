@@ -1,10 +1,6 @@
-import * as React from 'react';
 import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
 import MenuItem from '@mui/material/MenuItem';
-import SearchIcon from '@mui/icons-material/Search';
-import { FormControl, InputAdornment } from '@mui/material';
-
+import TextField from '@mui/material/TextField';
 const bodegas = [
   {
     value: 'B1',
@@ -19,19 +15,6 @@ const bodegas = [
     label: 'Bodega 3',
   },
 ]
-
-const currencies = [
-  {
-    value: 'CC',
-    label: 'Cedula de Ciudadania',
-  },
-  {
-    value: 'CE',
-    label: 'Cedula Extranjera',
-  },
-
-];
-
 export default function Bodega() {
   return (
     <>
