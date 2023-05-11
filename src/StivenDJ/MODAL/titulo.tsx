@@ -13,7 +13,7 @@ const card = (
 
 sx={{
 position: "relative",
-top: "-6px",
+top: "-15px",
 color: "#ffffff"}}>
 
 Datos Personales
@@ -33,19 +33,18 @@ export default function TituloModal() {
       <Box
      sx={{
      position: "absolute",
-     top: -20,
-     left: 10, 
-     margin:0,
+     top: -25,
+     left: 10,
      width: "98%",       //ancho
      height: "12%"}}     //largo
     >
 
-<h1>BUSQUEDA DE ARCHIVO</h1>
+<h3>BUSQUEDA DE ARCHIVO</h3>
 <Card variant="outlined"
 sx={{ 
    borderRadius: 6,
    background: "linear-gradient(90deg, rgba(143,191,51,1) 0%, rgba(57,164,217,1) 99%)",
-   height:50,
+   height:35
     }}>{card}</Card>
           
 

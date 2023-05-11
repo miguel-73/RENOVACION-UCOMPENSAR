@@ -24,7 +24,7 @@ export default function TextTipoActivo() {
      sx={{
     position: "absolute",
     borderColor: "#000000", 
-    top: 150,
+    top: 80,
     left: 640, 
     margin:0,
     width: "18%",       //ancho
