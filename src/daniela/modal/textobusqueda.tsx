@@ -8,7 +8,7 @@ export default function TextoBusquedaTerceros() {
     
       <Typography variant="h4" sx={{
         position: "absolute",
-        top: 10,
+        top: 5,
         left: 20, 
        
       }}>

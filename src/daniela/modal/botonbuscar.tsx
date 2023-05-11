@@ -15,7 +15,7 @@ export default function BottonBuscar() {
     position: "absolute",
 
     borderColor: "#dddddd", 
-    top: 98,
+    top: 79,
     left: 483, 
     margin:4,
     width: "9%",       //ancho

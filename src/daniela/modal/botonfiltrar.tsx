@@ -8,8 +8,8 @@ export default function BotonDeFiltrar() {
         <Box    sx={{
             position: "absolute",
             borderColor: "white", 
-            top: -55,
-            left: 215, 
+            top: -50,
+            left: 207, 
             margin:4,
             width: "9%",       //ancho
             height: "15%"}}     //largo 

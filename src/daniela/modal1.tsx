@@ -8,31 +8,35 @@ import CuadroPrimerNombre from './modal/cuadropnombre';
 import TextoPrimerApellido from './modal/textopapellido';
 import CuadroPrimerApellido from './modal/cuadropapellido';
 import BottonBuscar from './modal/botonbuscar';
-import CuadroBuscar from './modal/cuadrobuscar';
-import BotonArchivo from './modal/botondocumento';
-import BotonEnlaceExterno from './modal/botonenlace';
-import BotonDeFiltrar from './modal/botonfiltrar';
+// import CuadroBuscar from './modal/cuadrobuscar';
+// import BotonArchivo from './modal/botondocumento';
+// import BotonEnlaceExterno from './modal/botonenlace';
+// import BotonDeFiltrar from './modal/botonfiltrar';
 import { Box} from '@mui/material';
+import RemovableSortDemo from './modal/datatable';
+import ProductsDemo from './modal/datatable';
 
 
 export default function ModalPantalla1() {
     const [visible, setVisible] = useState<boolean>(false);
 
     return (
-        <div className="card flex justify-content-center">
+        <Box>
+            
+            <div className="card flex justify-content-center">
             <Sidebar visible={visible} onHide={() => setVisible(false)} fullScreen>
                <TextoBusquedaTerceros/>
                <DatosDePersonas/>
-               <TextoPrimerNombre/>
+               {/* <TextoPrimerNombre/> */}
                <CuadroPrimerNombre/>
-               <TextoPrimerApellido/>
+               {/* <TextoPrimerApellido/> */}
                <CuadroPrimerApellido/>
                <BottonBuscar/>
-               <Box   sx={{
+               {/* <Box   sx={{
             border:1,
             position: "absolute",
             borderColor: "black", 
-            top: 160,
+            top: 150,
             left: -19, 
             margin:4,
             width: "98%",       //ancho
@@ -40,13 +44,25 @@ export default function ModalPantalla1() {
                 <CuadroBuscar/>
                <BotonArchivo/>
                <BotonEnlaceExterno/>
-               <BotonDeFiltrar/>
-               </Box>
-               
-               
+               <BotonDeFiltrar/> */}
+               <Box  sx={{
+            border:1,
+            position: "absolute",
+            borderColor: "black", 
+            top: 160,
+            left: 9, 
+            margin:0,
+            width: "98%",       //ancho
+            height: "70%"}} > 
+
+                <ProductsDemo/>
+                </Box>
+               {/* </Box> */}
             </Sidebar>
             
             <Button icon="pi pi-th-large" onClick={() => setVisible(true)} />
-        </div>
+        </div>  
+        </Box>
+        
     )
 }
