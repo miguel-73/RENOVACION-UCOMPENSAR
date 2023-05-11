@@ -268,9 +268,15 @@ export default function TablaStiven() {
                
                
                
-                <Button label="New" icon="pi pi-plus" severity="success" onClick={openNew} />
-                <Button label="Delete" icon="pi pi-trash" severity="danger" onClick={confirmDeleteSelected} disabled={!selectedProducts || !selectedProducts.length} />
-                <Button label="Export" icon="pi pi-upload" className="p-button-help" onClick={exportCSV} />
+                <Button   style={{left:20}} icon="pi pi-file" rounded outlined severity="secondary" aria-label="Bookmark"  onClick={openNew} />
+                {/* <Button label="Delete" icon="pi pi-trash" severity="danger" onClick={confirmDeleteSelected} disabled={!selectedProducts || !selectedProducts.length} /> */}
+                <Button  style={{left:30}} icon="pi pi-external-link" rounded outlined severity="secondary" aria-label="Bookmark" className="p-button-help" onClick={exportCSV} />
+
+
+
+       
+
+
 
             </span>
         </div>
