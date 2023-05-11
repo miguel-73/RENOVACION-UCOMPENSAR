@@ -1,13 +1,14 @@
-import React from 'react';
-import './App.css';
-import { Grid } from '@mui/material';
+import React from "react";
+import "./App.css";
+
+import { BrowserRouter } from "react-router-dom";
+import { AppRouter } from "./Router";
 
 function App() {
   return (
-    <Grid>
-
-
-    </Grid>
+    <BrowserRouter>
+      <AppRouter />
+    </BrowserRouter>
   );
 }
 

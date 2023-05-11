@@ -1,15 +1,17 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-import Drawer from "../Drawer";
+import Drawer from "./Drawer";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import MuiAppBar, { AppBarProps as MuiAppBarProps } from "@mui/material/AppBar";
 import { styled } from "@mui/material/styles";
-import { ToggleDark } from "./components/ToggleDark";
+import { ToggleDark } from './components/ToggleDark';
 import ToggleNotifications from "./components/ToggleNotifications";
+import { Outlet } from "react-router-dom";
 
-const drawerWidth: string = "20vw";
+
+const drawerWidth: number = 270;
 
 interface AppBarProps extends MuiAppBarProps {
   openBrowser?: boolean;
@@ -18,16 +20,14 @@ interface AppBarProps extends MuiAppBarProps {
 const AppBar = styled(MuiAppBar, {
   shouldForwardProp: (prop) => prop !== "openBrowser",
 })<AppBarProps>(({ theme, openBrowser }) => ({
-  marginRight: 8,
-  borderRadius: "10px",
-  marginTop: 5,
-  width: "98.8vw",
+  
+  boxShadow:'none',
   transition: theme.transitions.create(["margin", "width"], {
     easing: theme.transitions.easing.sharp,
     duration: theme.transitions.duration.leavingScreen,
   }),
   ...(openBrowser && {
-    width: `calc(100vw - 22vw) !important`,
+    width: `calc(100vw - ${drawerWidth}px) !important`,
     marginLeft: `${drawerWidth}px`,
     borderRadius: "10px",
     transition: theme.transitions.create(["margin", "width"], {
@@ -55,6 +55,10 @@ function Nav() {
   const [openBrowser, setOpenBrowser] = React.useState(false);
 
   const [openMobile, setOpenMobile] = React.useState(false);
+ 
+  
+  
+  
 
   const handleDrawerOpenMobile = () => {
     setOpenMobile(!openMobile);
@@ -74,10 +78,10 @@ function Nav() {
   }, [mobile]);
 
   return (
-    <Box>
+    <Box sx={{display:"flex", }}>
       <AppBar
         position="fixed"
-        sx={{ background: "white", height: "10vh" }}
+        sx={{ background: "white", height: "10vh", display:'flex' }}
         openBrowser={openBrowser}
       >
         <Toolbar>
@@ -87,7 +91,7 @@ function Nav() {
             aria-label="open drawer"
             onClick={mobile ? handleDrawerOpenMobile : handleDrawerOpenBrowser}
             edge="start"
-            sx={{ mr: 2 }}
+            sx={{ mr: 2,  }}
             className="MenuIcon"
           >
             <MenuIcon
@@ -99,10 +103,10 @@ function Nav() {
           <ToggleDark
           Click={handleDarkModeToggle}
           Mode={darkMode}
-          sx={{marginRight:2}}
+          
           />
           </Box>
-          <Box >
+          <Box sx={{marginRight:2}} >
           <ToggleNotifications/>
           </Box>
         </Toolbar>
@@ -111,7 +115,21 @@ function Nav() {
         Tipo={mobile ? "temporary" : "persistent"}
         Open={mobile ? openMobile : openBrowser}
         drawerWidth={drawerWidth}
-      ></Drawer>
+      >
+      </Drawer>
+      <Box
+          sx={{
+            
+            display:'block',
+            height: '100vh',
+            width: openBrowser?`calc(100vw - ${drawerWidth}px) !important`:'100vw',
+            marginLeft:openBrowser?'20.6vw':1,
+            marginRight:1
+          }}
+          className={darkMode?'dark-mode':'light-mode'}
+        >
+          <Outlet/>
+          </Box>
     </Box>
   );
 }

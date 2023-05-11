@@ -1,5 +1,6 @@
 import React from "react";
 import Drawer from "@mui/material/Drawer";
+import SideBar from "../SideBar/SideBar";
 
 function DrawerT(props: any) {
   return (
@@ -15,7 +16,9 @@ function DrawerT(props: any) {
         }}
         anchor="left"
         open={props.Open}
-      ></Drawer>
+      >
+        <SideBar/>
+      </Drawer>
     </div>
   );
 }

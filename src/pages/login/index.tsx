@@ -3,9 +3,9 @@ import React from 'react'
 
 export const LoginPage = () => {
   return (
-    <Box sx={{ mt:9 }} maxWidth="xl">
+    <Box sx={{ mt:9,  }}>
       <Button fullWidth variant='contained'>
-        Login
+        Hola Login
       </Button>
     </Box>
   )
