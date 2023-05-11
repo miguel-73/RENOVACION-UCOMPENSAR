@@ -123,7 +123,7 @@ function Nav() {
             display:'block',
             height: '100vh',
             width: openBrowser?`calc(100vw - ${drawerWidth}px) !important`:'100vw',
-            marginLeft:openBrowser?'21.5vw':1,
+            marginLeft:openBrowser?'20.6vw':1,
             marginRight:1
           }}
           className={darkMode?'dark-mode':'light-mode'}
