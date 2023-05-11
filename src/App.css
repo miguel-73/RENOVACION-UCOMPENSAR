@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.MenuIcon {
+  background-color: #020325 !important;
+}
+
+.MenuIcon:hover{
+  background-color: #020325 !important;
+}
+
+.toggle-button{
+  background-color: transparent;
+  border:none;
+  color:inherit;
+}
