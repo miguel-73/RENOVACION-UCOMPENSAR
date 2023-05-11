@@ -20,7 +20,7 @@ export default function DatosDePersonas() {
     border: 0,
     borderRadius:7,
     background: "linear-gradient(90deg, rgba(55,90,26,1) 34%, rgba(17,127,200,1) 99%)",
-    top: 50,
+    top: 46,
     left: 10, 
     margin:0,
     width: "95%",       //ancho

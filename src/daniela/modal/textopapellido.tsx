@@ -8,7 +8,7 @@ export default function TextoPrimerApellido() {
     
       <Typography variant="body2" sx={{
         position: "absolute",
-        top: 100,
+        top: 110,
         left: 290, 
        
       }}>
