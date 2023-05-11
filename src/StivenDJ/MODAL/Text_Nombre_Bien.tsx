@@ -44,7 +44,7 @@ export default function TextNombreBien() {
         <Box
      sx={{
     position: "absolute",
-    top: 150,
+    top: 80,
     left: 340, 
     margin:0,
     width: "18%",       //ancho

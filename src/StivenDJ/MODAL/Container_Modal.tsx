@@ -4,6 +4,7 @@ import TextCodigoBien from './Text_Cod_Bien';
 import TextNombreBien from './Text_Nombre_Bien';
 import TextTipoActivo from './Tipo_Activo';
 import BottonBuscar from './boton_Buscar';
+import TablaStiven from './tabla';
 
 
 
@@ -24,12 +25,13 @@ export default function ContainerModal() {
     width: "95%",       //ancho
     height: "95%"}}     //largo
           >
-   
-       <TituloModal/>
+ 
+        <TituloModal/>
        <TextCodigoBien/>
        <TextNombreBien/>
        <TextTipoActivo/>
-       <BottonBuscar/>
+       <BottonBuscar/> 
+       <TablaStiven/>
 
 
 

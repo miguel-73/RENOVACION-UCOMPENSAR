@@ -12,10 +12,7 @@ export default function ParteStiven() {
     position: "absolute",
     border: 3,
     backgroundColor:'#ffffff',
-    borderColor: "#dddddd", //borde
-    top: 0,              //mover abajo
-    left: 0,             //mover a la derecha
-    margin:1,            //margen
+    borderColor: "#dddddd", //borde          //margen
     width: "99%",       //ancho
     height: "97%"}}     //largo
           >
