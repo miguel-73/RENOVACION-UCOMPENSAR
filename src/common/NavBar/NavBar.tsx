@@ -11,7 +11,7 @@ import ToggleNotifications from "./components/ToggleNotifications";
 import { Outlet } from "react-router-dom";
 
 
-const drawerWidth: string = "20vw";
+const drawerWidth: number = 270;
 
 interface AppBarProps extends MuiAppBarProps {
   openBrowser?: boolean;
@@ -20,17 +20,14 @@ interface AppBarProps extends MuiAppBarProps {
 const AppBar = styled(MuiAppBar, {
   shouldForwardProp: (prop) => prop !== "openBrowser",
 })<AppBarProps>(({ theme, openBrowser }) => ({
-  marginRight: 8,
-  borderRadius: "10px",
-  marginTop: 5,
-  width: "98.8vw",
-  marginLeft:'none',
+  
+  boxShadow:'none',
   transition: theme.transitions.create(["margin", "width"], {
     easing: theme.transitions.easing.sharp,
     duration: theme.transitions.duration.leavingScreen,
   }),
   ...(openBrowser && {
-    width: `calc(100vw - 22vw) !important`,
+    width: `calc(100vw - ${drawerWidth}px) !important`,
     marginLeft: `${drawerWidth}px`,
     borderRadius: "10px",
     transition: theme.transitions.create(["margin", "width"], {
@@ -81,7 +78,7 @@ function Nav() {
   }, [mobile]);
 
   return (
-    <Box sx={{display:"flex"}}>
+    <Box sx={{display:"flex", }}>
       <AppBar
         position="fixed"
         sx={{ background: "white", height: "10vh", display:'flex' }}
@@ -94,7 +91,7 @@ function Nav() {
             aria-label="open drawer"
             onClick={mobile ? handleDrawerOpenMobile : handleDrawerOpenBrowser}
             edge="start"
-            sx={{ mr: 2 }}
+            sx={{ mr: 2,  }}
             className="MenuIcon"
           >
             <MenuIcon
@@ -106,10 +103,10 @@ function Nav() {
           <ToggleDark
           Click={handleDarkModeToggle}
           Mode={darkMode}
-          sx={{marginRight:2}}
+          
           />
           </Box>
-          <Box >
+          <Box sx={{marginRight:2}} >
           <ToggleNotifications/>
           </Box>
         </Toolbar>
@@ -125,7 +122,7 @@ function Nav() {
             
             display:'block',
             height: '100vh',
-            width: openBrowser?`calc(100vw - 22vw) !important`:'100vw',
+            width: openBrowser?`calc(100vw - ${drawerWidth}px) !important`:'100vw',
             marginLeft:openBrowser?'21.5vw':1,
             marginRight:1
           }}
