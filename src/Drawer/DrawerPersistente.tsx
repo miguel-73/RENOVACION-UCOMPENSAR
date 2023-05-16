@@ -18,6 +18,8 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
+import DrawerContactos from './DeawerContactos';
+import ImagenCompensar from './imagen';
 
 const drawerWidth = 240;
 
@@ -85,8 +87,8 @@ export default function PersistentDrawerStiven() {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar position="fixed" open={open}>
-        <Toolbar>
+      <AppBar  color="inherit" position="fixed" open={open}>
+        <Toolbar  >
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -97,10 +99,38 @@ export default function PersistentDrawerStiven() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div">
-            Persistent drawer
+          <ImagenCompensar/>
           </Typography>
+
+
+
+          <Box sx={{
+    position: "absolute",
+    top: 10,
+    right: 10,
+    border: 1,
+    backgroundColor:'#042F4A',
+    borderColor: "#dddddd", 
+    
+   }}>
+
+  
+  
+
+
+
+
+         <DrawerContactos/>
+
+         </Box>
+
+
+
+
         </Toolbar>
       </AppBar>
+
+      
       <Drawer
         sx={{
           width: drawerWidth,
@@ -118,6 +148,13 @@ export default function PersistentDrawerStiven() {
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
           </IconButton>
+
+
+
+
+  
+
+
         </DrawerHeader>
         <Divider />
         <List>
@@ -149,6 +186,20 @@ export default function PersistentDrawerStiven() {
       <Main open={open}>
         <DrawerHeader />
         <Typography paragraph>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
        CONTENIDO
         </Typography>
         <Typography paragraph>
