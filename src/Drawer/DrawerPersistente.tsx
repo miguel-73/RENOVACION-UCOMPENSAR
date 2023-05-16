@@ -19,7 +19,8 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import DrawerContactos from './DeawerContactos';
-import ImagenCompensar from './imagen';
+import ImagenCompensar from './imagenCompensarInicio';
+import ImagenCompensarMenu from './ImagenMenuCompensar';
 
 const drawerWidth = 240;
 
@@ -106,10 +107,10 @@ export default function PersistentDrawerStiven() {
 
           <Box sx={{
     position: "absolute",
-    top: 10,
-    right: 10,
-    border: 1,
-    backgroundColor:'#042F4A',
+    top: 15,
+    right: 15,
+    border: 0,
+    backgroundColor:'white',
     borderColor: "#dddddd", 
     
    }}>
@@ -152,11 +153,21 @@ export default function PersistentDrawerStiven() {
 
 
 
+     
   
 
 
         </DrawerHeader>
+
+
+        <ImagenCompensarMenu/>
+
+
         <Divider />
+
+
+      
+
         <List>
           {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
             <ListItem key={text} disablePadding>
@@ -191,16 +202,12 @@ export default function PersistentDrawerStiven() {
 
     
 
-
-
-
-
-
-
-
+        
 
 
        CONTENIDO
+
+       
         </Typography>
         <Typography paragraph>
          CONTENDO
