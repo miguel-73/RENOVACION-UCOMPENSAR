@@ -21,6 +21,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import DrawerContactos from './DeawerContactos';
 import ImagenCompensar from './imagenCompensarInicio';
 import ImagenCompensarMenu from './ImagenMenuCompensar';
+import ConetenedorSescciones from '../OpcionesDrawer/ConetenedorSescciones';
 
 const drawerWidth = 240;
 
@@ -169,7 +170,7 @@ export default function PersistentDrawerStiven() {
       
 
         <List>
-          {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+          {['Inicio', 'Horario', 'Send email', 'Drafts'].map((text, index) => (
             <ListItem key={text} disablePadding>
               <ListItemButton>
                 <ListItemIcon>
@@ -196,22 +197,18 @@ export default function PersistentDrawerStiven() {
       </Drawer>
       <Main open={open}>
         <DrawerHeader />
-        <Typography paragraph>
+        
 
 
-
-    
+    <ConetenedorSescciones/>
 
         
 
 
-       CONTENIDO
 
        
-        </Typography>
-        <Typography paragraph>
-         CONTENDO
-        </Typography>
+       
+        
       </Main>
     </Box>
   );
