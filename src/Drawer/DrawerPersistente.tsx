@@ -20,6 +20,11 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import DrawerContactos from './DeawerContactos';
 import ImagenCompensar from './imagen';
+import Carta from './MG/Carta';
+import AutoGrid from './MG/Carta';
+import Tabla from './MG/Tabla';
+
+
 
 const drawerWidth = 240;
 
@@ -185,26 +190,11 @@ export default function PersistentDrawerStiven() {
       </Drawer>
       <Main open={open}>
         <DrawerHeader />
-        <Typography paragraph>
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-       CONTENIDO
-        </Typography>
-        <Typography paragraph>
-         CONTENDO
-        </Typography>
+        
+        <AutoGrid/>
+        
+        <Tabla/>
+       
       </Main>
     </Box>
   );
