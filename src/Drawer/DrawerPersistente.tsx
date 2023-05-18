@@ -19,7 +19,8 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import DrawerContactos from './DeawerContactos';
-import ImagenCompensar from './imagen';
+import ImagenCompensarMenu from './ImagenMenuCompensar';
+import ImagenCompensar from './imagenCompensarInicio';
 
 const drawerWidth = 240;
 
