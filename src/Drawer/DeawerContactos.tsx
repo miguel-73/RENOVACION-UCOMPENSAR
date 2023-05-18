@@ -11,8 +11,7 @@ export default function DrawerContactos() {
     return (
         <div className="card">
          
- 
- 
+       
   <i className="pi pi-spin pi-cog" style={{ fontSize: '2rem' }} onClick={() => setVisibleRight(true)}></i>
 
 

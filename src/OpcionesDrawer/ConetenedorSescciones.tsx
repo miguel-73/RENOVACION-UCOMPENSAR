@@ -8,7 +8,7 @@ export default  function ConetenedorSescciones() {
   return (
     <div>
   
-    <SeccionInicioDrawer/>
+    {/* <SeccionInicioDrawer/>  */}
 
 
 
