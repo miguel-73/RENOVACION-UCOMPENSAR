@@ -22,6 +22,9 @@ import DrawerContactos from "./DeawerContactos";
 import ImagenCompensar from "./imagenCompensarInicio";
 import ImagenCompensarMenu from "./ImagenMenuCompensar";
 import ConetenedorSescciones from "../OpcionesDrawer/ConetenedorSescciones";
+import AutoGrid from './MG/Carta';
+import Titulo from './MG/Titulo';
+import Tabla from './MG/Tabla';
 
 import Avatar from "@mui/material/Avatar";
 
@@ -173,7 +176,9 @@ export default function PersistentDrawerStiven() {
       </Drawer>
       <Main open={open}>
         <DrawerHeader />
-
+        <AutoGrid />
+        <Titulo/>
+        <Tabla />
         <ConetenedorSescciones />
       </Main>
     </Box>
