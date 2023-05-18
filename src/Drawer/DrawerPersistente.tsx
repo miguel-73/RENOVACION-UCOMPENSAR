@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import * as React from "react";
 import { styled, useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
@@ -29,34 +28,6 @@ import Avatar from "@mui/material/Avatar";
 const drawerWidth = 240;
 
 const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })<{
-=======
-import * as React from 'react';
-import { styled, useTheme } from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import Drawer from '@mui/material/Drawer';
-import CssBaseline from '@mui/material/CssBaseline';
-import MuiAppBar, { AppBarProps as MuiAppBarProps } from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import List from '@mui/material/List';
-import Typography from '@mui/material/Typography';
-import Divider from '@mui/material/Divider';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
-import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
-import DrawerContactos from './DeawerContactos';
-import ImagenCompensar from './imagen';
-
-const drawerWidth = 240;
-
-const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })<{
->>>>>>> ea2336cb4c3d275eee3ba5bf7e54d533b8a18586
   open?: boolean;
 }>(({ theme, open }) => ({
   flexGrow: 1,
@@ -94,15 +65,9 @@ const AppBar = styled(MuiAppBar, {
   }),
 }));
 
-<<<<<<< HEAD
 const DrawerHeader = styled("div")(({ theme }) => ({
   display: "flex",
   alignItems: "center",
-=======
-const DrawerHeader = styled('div')(({ theme }) => ({
-  display: 'flex',
-  alignItems: 'center',
->>>>>>> ea2336cb4c3d275eee3ba5bf7e54d533b8a18586
   padding: theme.spacing(0, 1),
   // necessary for content to be below app bar
   ...theme.mixins.toolbar,
@@ -120,7 +85,6 @@ export default function PersistentDrawerStiven() {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-<<<<<<< HEAD
 
       <AppBar
         position="fixed"
@@ -128,10 +92,6 @@ export default function PersistentDrawerStiven() {
         style={{ backgroundColor: "#FF9142" }}
       >
         <Toolbar>
-=======
-      <AppBar  color="inherit" position="fixed" open={open}>
-        <Toolbar  >
->>>>>>> ea2336cb4c3d275eee3ba5bf7e54d533b8a18586
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -144,36 +104,8 @@ export default function PersistentDrawerStiven() {
           <Typography variant="h6" noWrap component="div">
             <ImagenCompensar />
           </Typography>
-<<<<<<< HEAD
-=======
 
 
-
-          <Box sx={{
-    position: "absolute",
-    top: 10,
-    right: 10,
-    border: 1,
-    backgroundColor:'#042F4A',
-    borderColor: "#dddddd", 
-    
-   }}>
-
-  
-  
-
-
-
-
-         <DrawerContactos/>
-
-         </Box>
-
-
->>>>>>> ea2336cb4c3d275eee3ba5bf7e54d533b8a18586
-
-
-<<<<<<< HEAD
           <Box
             sx={{
               position: "absolute",
@@ -186,12 +118,6 @@ export default function PersistentDrawerStiven() {
           </Box>
         </Toolbar>
       </AppBar>
-=======
-        </Toolbar>
-      </AppBar>
-
-      
->>>>>>> ea2336cb4c3d275eee3ba5bf7e54d533b8a18586
       <Drawer
         sx={{
           width: drawerWidth,
@@ -247,31 +173,8 @@ export default function PersistentDrawerStiven() {
       </Drawer>
       <Main open={open}>
         <DrawerHeader />
-<<<<<<< HEAD
 
         <ConetenedorSescciones />
-=======
-        <Typography paragraph>
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-       CONTENIDO
-        </Typography>
-        <Typography paragraph>
-         CONTENDO
-        </Typography>
->>>>>>> ea2336cb4c3d275eee3ba5bf7e54d533b8a18586
       </Main>
     </Box>
   );
