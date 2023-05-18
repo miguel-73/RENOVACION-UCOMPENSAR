@@ -1,10 +1,6 @@
-import * as React from 'react';
-import Divider from '@mui/material/Divider';
 import Paper from '@mui/material/Paper';
-import Stack from '@mui/material/Stack';
 import { styled } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
-
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
     ...theme.typography.body2,
@@ -17,8 +13,11 @@ export default function DividerStack() {
     return (
         <div>
             <Grid container spacing={2} border={0}>
-                <Grid item xs={12} sm={4}>
-                    <Item>
+                <Grid item sx={{ display: "inline" }} xs={12} sm={4}>
+                    <Item style={{
+                        // overflow: "hidden",
+                        wordWrap: "break-word"
+                    }}>
                         Estudiante
                         <div />
                         Miguel Angel Murcia Ocampo
@@ -31,7 +30,9 @@ export default function DividerStack() {
                     </Item>
                 </Grid>
                 <Grid item xs={12} sm={4}>
-                    <Item>
+                    <Item style={{
+                        wordWrap: "break-word"
+                    }}>
                         Datos del programa
                         <div />
                         TÉCNICA PROFESIONAL EN OPERACIÓN Y MANTENIMIENTO DE BASES DE DATOS

@@ -1,33 +1,29 @@
-import * as React from 'react';
-import { styled, useTheme } from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import Drawer from '@mui/material/Drawer';
-import CssBaseline from '@mui/material/CssBaseline';
-import MuiAppBar, { AppBarProps as MuiAppBarProps } from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import List from '@mui/material/List';
-import Typography from '@mui/material/Typography';
-import Divider from '@mui/material/Divider';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import MailIcon from '@mui/icons-material/Mail';
+import MenuIcon from '@mui/icons-material/Menu';
+import InboxIcon from '@mui/icons-material/MoveToInbox';
+import MuiAppBar, { AppBarProps as MuiAppBarProps } from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import CssBaseline from '@mui/material/CssBaseline';
+import Divider from '@mui/material/Divider';
+import Drawer from '@mui/material/Drawer';
+import IconButton from '@mui/material/IconButton';
+import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import { styled, useTheme } from '@mui/material/styles';
+import * as React from 'react';
 import DrawerContactos from './DeawerContactos';
-import ImagenCompensar from './imagen';
-import Carta from './MG/Carta';
 import AutoGrid from './MG/Carta';
 import Tabla from './MG/Tabla';
-
-
-
+import ImagenCompensar from './imagen';
+import Titulo from './MG/Titulo';
 const drawerWidth = 240;
-
 const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })<{
   open?: boolean;
 }>(({ theme, open }) => ({
@@ -46,11 +42,9 @@ const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })<{
     marginLeft: 0,
   }),
 }));
-
 interface AppBarProps extends MuiAppBarProps {
   open?: boolean;
 }
-
 const AppBar = styled(MuiAppBar, {
   shouldForwardProp: (prop) => prop !== 'open',
 })<AppBarProps>(({ theme, open }) => ({
@@ -67,7 +61,6 @@ const AppBar = styled(MuiAppBar, {
     }),
   }),
 }));
-
 const DrawerHeader = styled('div')(({ theme }) => ({
   display: 'flex',
   alignItems: 'center',
@@ -76,23 +69,19 @@ const DrawerHeader = styled('div')(({ theme }) => ({
   ...theme.mixins.toolbar,
   justifyContent: 'flex-end',
 }));
-
 export default function PersistentDrawerStiven() {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
-
   const handleDrawerOpen = () => {
     setOpen(true);
   };
-
   const handleDrawerClose = () => {
     setOpen(false);
   };
-
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar  color="inherit" position="fixed" open={open}>
+      <AppBar color="inherit" position="fixed" open={open}>
         <Toolbar  >
           <IconButton
             color="inherit"
@@ -104,38 +93,20 @@ export default function PersistentDrawerStiven() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div">
-          <ImagenCompensar/>
+            <ImagenCompensar />
           </Typography>
-
-
-
           <Box sx={{
-    position: "absolute",
-    top: 10,
-    right: 10,
-    border: 1,
-    backgroundColor:'#042F4A',
-    borderColor: "#dddddd", 
-    
-   }}>
-
-  
-  
-
-
-
-
-         <DrawerContactos/>
-
-         </Box>
-
-
-
-
+            position: "absolute",
+            top: 10,
+            right: 10,
+            border: 1,
+            backgroundColor: '#042F4A',
+            borderColor: "#dddddd",
+          }}>
+            <DrawerContactos />
+          </Box>
         </Toolbar>
       </AppBar>
-
-      
       <Drawer
         sx={{
           width: drawerWidth,
@@ -153,13 +124,6 @@ export default function PersistentDrawerStiven() {
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
           </IconButton>
-
-
-
-
-  
-
-
         </DrawerHeader>
         <Divider />
         <List>
@@ -190,11 +154,10 @@ export default function PersistentDrawerStiven() {
       </Drawer>
       <Main open={open}>
         <DrawerHeader />
-        
-        <AutoGrid/>
-        
-        <Tabla/>
-       
+        <AutoGrid />
+        <Titulo/>
+        <Tabla />
+        {/* <Materias/> */}
       </Main>
     </Box>
   );
