@@ -3,6 +3,8 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
+import { number } from 'yargs';
+
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
   ...theme.typography.body2,
@@ -10,27 +12,33 @@ const Item = styled(Paper)(({ theme }) => ({
   textAlign: 'center',
   color: theme.palette.text.secondary,
 }));
+
+
 export default function Nota1() {
+
+  const nota1:number=110;
+
   return (
     <Box sx={{ flexGrow: 13, border: 0, }}>
       <Grid container spacing={3}
         direction="column"
         justifyContent="space-evenly"
       >
+        {/* varible  */}
         <Grid item >
-          <Item>1</Item>
+          <Item> {nota1} </Item>
         </Grid>
         <Grid item >
-          <Item>2</Item>
+          <Item>20</Item>
         </Grid>
         <Grid item >
-          <Item>3</Item>
+          <Item>30</Item>
         </Grid>
         <Grid item >
-          <Item>4</Item>
+          <Item>40</Item>
         </Grid>
         <Grid item >
-          <Item>5</Item>
+          <Item>50</Item>
         </Grid>
       </Grid>
     </Box>

@@ -19,7 +19,7 @@ export default function Tabla() {
         <>
             <Box sx={{ flexGrow: 1 }}>
                 <Grid container spacing={1} columns={16} border={0} alignItems="stretch">
-                    <Grid item xs={3.2} sm={2} >
+                    <Grid item xs={3.2} sm={2.8} >
                         <Item  style={{ wordWrap: "break-word", backgroundColor: '#ff7700', borderRadius: 20 }}>Materia</Item>
                     </Grid>
                     <Grid item xs={3.2} sm={2} >
@@ -37,7 +37,7 @@ export default function Tabla() {
                 </Grid>
                 <div>
                     <Grid container spacing={1} columns={16} border={1} alignItems="stretch" sx={{ height: 370 }}>
-                        <Grid item xs={3.2} sm={2} sx={{ height: '100%' }}>
+                        <Grid item xs={3.2} sm={2.8} sx={{ height: '100%' }}>
                             <Item style={{ backgroundColor: '#E6F2FF' }} sx={{ height: '100%' }}>
                                 <Grid style={{ marginBottom: '20px' }}>
                                     <Item  style={{  wordWrap: "break-word",backgroundColor: '#97CEEB', borderRadius: 20 }}>Codigo #</Item>
