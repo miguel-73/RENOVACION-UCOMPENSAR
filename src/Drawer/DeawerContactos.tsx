@@ -11,8 +11,8 @@ export default function DrawerContactos() {
     return (
         <div className="card">
          
-  <Button icon="pi pi-arrow-left" onClick={() => setVisibleRight(true)} />
-
+       
+  <i className="pi pi-spin pi-cog" style={{ fontSize: '2rem' }} onClick={() => setVisibleRight(true)}></i>
 
 
             <Sidebar visible={visibleRight} position="right" onHide={() => setVisibleRight(false)}>
