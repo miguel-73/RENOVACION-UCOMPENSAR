@@ -26,7 +26,7 @@ import FolderSpecialIcon from '@mui/icons-material/FolderSpecial';
 
 
 const drawerWidth = 240;
-const links = ["Inicio-sti", "Notas-mig", "Horario-dani", "Drafts"]
+const links = ["Inicio", "Notas", "Horario", "Drafts"]
 
 const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })<{
   open?: boolean;
@@ -154,7 +154,7 @@ export default function PersistentDrawerStiven() {
                   <ListItemIcon>
                     {index % 2 === 0 ? <FolderSpecialIcon /> : <FolderSpecialIcon />}
                   </ListItemIcon>
-                  <Link to={`/${text.toLowerCase() }`}>
+                  <Link to={`/${text.toLowerCase()}`}>
                     <ListItemText primary={text.toUpperCase()} />
                   </Link>
                 </ListItemButton>
@@ -179,8 +179,8 @@ export default function PersistentDrawerStiven() {
       <Main open={open}>
         <DrawerHeader />
 
-        <RutasDrawer/>
-      
+        <RutasDrawer />
+
       </Main>
     </Box>
   );
