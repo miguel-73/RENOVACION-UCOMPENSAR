@@ -47,7 +47,7 @@ export default function SelectorDePrograma() {
   };
 
   return (
-    <Box sx={{ border: 3, width: "100%", margin: 0, height: "auto" }}>
+    <Box sx={{ border: 0, width: "100%", margin: 0, height: "auto" }}>
       <Typography
         variant="button"
         display="block"

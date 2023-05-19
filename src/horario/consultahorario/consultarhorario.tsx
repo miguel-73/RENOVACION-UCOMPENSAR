@@ -6,7 +6,7 @@ import BontonContinuarHorario from '../horario1/botonmodal';
 
 export default function ConsultarHorario() {
     return (
-      <Grid alignItems="center" container spacing={2}>
+      <Grid alignItems="center" container spacing={0}>
         <Grid item xs={12} sm={12}  md={12}>
         <Box
           sx={{
@@ -19,10 +19,11 @@ export default function ConsultarHorario() {
         >
 
 
- <Panel header="Consultar Horario Estudiante"   >
+ <Panel header="Consultar Horario Estudiante" style={{ backgroundColor: '#B5B2B2' }} >
 
-             <p  style={{ height: "225px" }} className="m-0">
+             <p  style={{ height: "225px",  }} className="m-0">
              <PrincipalGrid/>
+             
             </p>
             
         </Panel>
@@ -32,10 +33,6 @@ export default function ConsultarHorario() {
 
         </Grid>
         </Grid>
-
-
-
-
        
     )
 }

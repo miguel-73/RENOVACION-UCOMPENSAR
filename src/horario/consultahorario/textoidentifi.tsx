@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 
 export default function TextoIdentificacion() {
   return (
-    <Box sx={{top:5, border: 1, width: '250PX',  margin:1,      
+    <Box sx={{top:5, border: 0, width: '250PX',  margin:1,      
     height: '60px', }}>
       
       <Typography variant="button" display="block" gutterBottom style={{ fontWeight: "bold" }}>
