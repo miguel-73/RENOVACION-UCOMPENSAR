@@ -106,11 +106,6 @@ export default function PersistentDrawerStiven() {
             <ImagenCompensar />
           </Typography>
 
-          <Avatar
-            alt="Trevor Henderson"
-            src="../imagenes/7.jpg  "
-            style={{ height: "42px", position: "absolute", left: "85%" }}
-          />
 
           <Box
             sx={{
