@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Grid } from '@mui/material';
+import HorarioTabla from './tablahorario';
 
 
 
@@ -12,14 +13,14 @@ export default function ContainerPrincipalModal() {
     <Box sx={{
     position: "auto",
     top: 0,
-    border: 1,
+    border: 3,
     backgroundColor:'white',
     borderColor: "#dddddd", 
     width: "auto",      
-    height: 520,
+    height: 490,
     margin:0
    }}>
-     
+     {/* <HorarioTabla/> */}
     </Box>
       </Grid>  
         </Grid>

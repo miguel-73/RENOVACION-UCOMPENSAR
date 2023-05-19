@@ -1,6 +1,5 @@
 import React from 'react'; 
-import { Panel } from 'primereact/panel';
-import { Grid, Box} from '@mui/material';
+import { AppBar, Toolbar, Typography, Grid, Box } from '@mui/material';
 import PrincipalGrid from './gridprincipal';
 import BontonContinuarHorario from '../horario1/botonmodal';
 
@@ -11,28 +10,27 @@ export default function ConsultarHorario() {
         <Box
           sx={{
             position: "auto",
-  border: 2,
+  border: 4,
   backgroundColor:'white',
   borderColor: "#dddddd",  
   margin:2,      
   height: '400px',}}     //largo
         >
 
-
- <Panel header="Consultar Horario Estudiante" style={{ backgroundColor: '#B5B2B2' }} >
-
-             <p  style={{ height: "225px",  }} className="m-0">
-             <PrincipalGrid/>
-             
-            </p>
-            
-        </Panel>
-       <BontonContinuarHorario/>
-      
+<AppBar position="static" sx={{ backgroundColor: '#C0C0C0' }}>
+            <Toolbar>
+              <Typography variant="h6" component="div" sx={{ flexGrow: 1, color:'black'}}>
+                Consultar Horario Estudiante
+              </Typography>
+            </Toolbar>
+          </AppBar>
+          <Box p={2}>
+            <PrincipalGrid />
+          </Box>
+          <BontonContinuarHorario />
         </Box>
-
         </Grid>
-        </Grid>
+     </Grid>
        
     )
 }

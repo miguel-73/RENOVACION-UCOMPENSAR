@@ -11,8 +11,8 @@ export default function BontonContinuarHorario() {
         
          <Box
         sx={{
-          position: "absolute",
-border: 1,
+          position: "auto",
+border: 0,
 width: '10%',  
 marginLeft: '70%'  // Valor positivo para desplazar hacia la derecha
 }}     //largo
@@ -21,7 +21,7 @@ marginLeft: '70%'  // Valor positivo para desplazar hacia la derecha
             <Sidebar visible={visible} onHide={() => setVisible(false)} fullScreen>
                <ContainerPrincipalModal/>
             </Sidebar>
-            <Button  onClick={() => setVisible(true)} style={{ width: '100%'}}>
+            <Button  onClick={() => setVisible(true)} style={{ width: 'auto', color:'black', borderRadius:10}}>
   continuar
 </Button>
 

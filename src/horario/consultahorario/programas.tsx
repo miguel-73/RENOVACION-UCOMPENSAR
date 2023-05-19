@@ -47,17 +47,17 @@ export default function SelectorDePrograma() {
   };
 
   return (
-    <Box sx={{ border: 0, width: "100%", margin: 0, height: "auto" }}>
+    <Box sx={{ border: 0, width: "100%", margin: 0, height: "auto"}}>
       <Typography
         variant="button"
         display="block"
         gutterBottom
-        style={{ fontWeight: "bold" }}
+        style={{ fontWeight: "bold"}}
       >
         programas
       </Typography>
       <div>
-        <FormControl sx={{ m: 0, width: "100%", mt: 0 }}>
+        <FormControl sx={{ m: 0, width: "100%", mt: 0}}>
           <Select
             multiple
             displayEmpty
