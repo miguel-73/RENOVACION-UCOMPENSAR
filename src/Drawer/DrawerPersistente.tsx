@@ -16,19 +16,17 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
 import DrawerContactos from "./DeawerContactos";
 import ImagenCompensar from "./imagenCompensarInicio";
 import ImagenCompensarMenu from "./ImagenMenuCompensar";
-import ConetenedorSescciones from "../OpcionesDrawer/ConetenedorSescciones";
-import AutoGrid from './MG/Carta';
-import Titulo from './MG/Titulo';
-import Tabla from './MG/Tabla';
-
 import Avatar from "@mui/material/Avatar";
+import { Link } from 'react-router-dom';
+import RutasDrawer from "../Router/RutasDrawer";
+import FolderSpecialIcon from '@mui/icons-material/FolderSpecial';
+
 
 const drawerWidth = 240;
+const links = ["Inicio-sti", "Notas-mig", "Horario-dani", "Drafts"]
 
 const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })<{
   open?: boolean;
@@ -108,11 +106,6 @@ export default function PersistentDrawerStiven() {
             <ImagenCompensar />
           </Typography>
 
-          <Avatar
-            alt="Trevor Henderson"
-            src="../imagenes/7.jpg  "
-            style={{ height: "42px", position: "absolute", left: "85%" }}
-          />
 
           <Box
             sx={{
@@ -154,16 +147,20 @@ export default function PersistentDrawerStiven() {
         <Divider />
 
         <List>
-          {["Inicio", "Horario", "Send email", "Drafts"].map((text, index) => (
-            <ListItem key={text} disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItemButton>
-            </ListItem>
-          ))}
+          {links.map((text, index) => {
+            return (
+              <ListItem key={text} disablePadding>
+                <ListItemButton>
+                  <ListItemIcon>
+                    {index % 2 === 0 ? <FolderSpecialIcon /> : <FolderSpecialIcon />}
+                  </ListItemIcon>
+                  <Link to={`/${text.toLowerCase() }`}>
+                    <ListItemText primary={text.toUpperCase()} />
+                  </Link>
+                </ListItemButton>
+              </ListItem>
+            )
+          })}
         </List>
         <Divider />
         <List>
@@ -171,7 +168,7 @@ export default function PersistentDrawerStiven() {
             <ListItem key={text} disablePadding>
               <ListItemButton>
                 <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                  {index % 2 === 0 ? <FolderSpecialIcon /> : <FolderSpecialIcon />}
                 </ListItemIcon>
                 <ListItemText primary={text} />
               </ListItemButton>
@@ -181,10 +178,9 @@ export default function PersistentDrawerStiven() {
       </Drawer>
       <Main open={open}>
         <DrawerHeader />
-        <AutoGrid />
-        <Titulo/>
-        <Tabla />
-        <ConetenedorSescciones />
+
+        <RutasDrawer/>
+      
       </Main>
     </Box>
   );

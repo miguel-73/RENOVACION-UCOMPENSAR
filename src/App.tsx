@@ -5,7 +5,9 @@ import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
 import PersistentDrawerStiven from './Drawer/DrawerPersistente';
 
-function App() {
+
+
+export default  function App() {
   return (
     <div>
    <PersistentDrawerStiven/>
@@ -14,4 +16,3 @@ function App() {
   );
 }
 
-export default App;
