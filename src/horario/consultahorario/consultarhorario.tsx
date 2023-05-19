@@ -1,36 +1,38 @@
 import React from 'react'; 
 import { Panel } from 'primereact/panel';
 import { Grid, Box} from '@mui/material';
+import PrincipalGrid from './gridprincipal';
+import BontonContinuarHorario from '../horario1/botonmodal';
 
 export default function ConsultarHorario() {
     return (
-
-        <Grid item xs={12} sm={6}  md={6}>
+      <Grid alignItems="center" container spacing={0}>
+        <Grid item xs={12} sm={12}  md={12}>
         <Box
           sx={{
-            position: "absolute",
+            position: "auto",
   border: 2,
   backgroundColor:'white',
-  borderColor: "#dddddd", 
-  top: 10,
-  left: 10, 
-  margin:0,
-  width: '98%',      
-  height: '180px',}}     //largo
+  borderColor: "#dddddd",  
+  margin:2,      
+  height: '400px',}}     //largo
         >
- <Panel header="Consultar Horario Estudiante">
-            <p className="m-0">
-              t laborum.
+
+
+ <Panel header="Consultar Horario Estudiante" style={{ backgroundColor: '#B5B2B2' }} >
+
+             <p  style={{ height: "225px",  }} className="m-0">
+             <PrincipalGrid/>
+             
             </p>
+            
         </Panel>
+       <BontonContinuarHorario/>
+      
         </Box>
 
         </Grid>
-
-
-
-
-
+        </Grid>
        
     )
 }
