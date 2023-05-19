@@ -21,19 +21,19 @@ export default function Nota3() {
             // alignItems="flex-start"
             >
                 <Grid item >
-                    <Item>1</Item>
+                    <Item>10</Item>
                 </Grid>
                 <Grid item >
-                    <Item>2</Item>
+                    <Item>20</Item>
                 </Grid>
                 <Grid item >
-                    <Item>3</Item>
+                    <Item>30</Item>
                 </Grid>
                 <Grid item >
-                    <Item>4</Item>
+                    <Item>40</Item>
                 </Grid>
                 <Grid item >
-                    <Item>5</Item>
+                    <Item>50</Item>
                 </Grid>
             </Grid>
         </Box>
