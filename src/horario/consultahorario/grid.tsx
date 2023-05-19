@@ -21,7 +21,7 @@ export default function BasicGrid() {
         <Box sx={{
   position: "auto",
   top: 0,
-  border: 2,
+  border: 4,
   backgroundColor:'white',
   borderColor: "#dddddd", 
   width: 'auto',      
