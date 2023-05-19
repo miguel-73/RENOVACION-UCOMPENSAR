@@ -2,7 +2,6 @@
 import { Routes, Route } from 'react-router-dom'
 import FotoPerfilStudiante from '../Inicio-drawer/DatosPersonales';
 import Notas from '../Drawer/MG/Notas';
-import BasicGrid from '../horario/consultahorario/grid';
 
 
 export default function RutasDrawer() {
@@ -15,13 +14,9 @@ export default function RutasDrawer() {
                 />
                 <Route
                     path={"/Notas"}
-                    element={<Tabla />}
+                    element={<Notas />}
                 />
-                
             </Routes>
-       
-          
-
         </div>
     );
 }
