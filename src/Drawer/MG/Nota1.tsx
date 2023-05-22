@@ -12,12 +12,13 @@ const Item = styled(Paper)(({ theme }) => ({
   textAlign: 'center',
   color: theme.palette.text.secondary,
 }));
-
+export const CalculoUno: number = 35;
+export const ExtraccionUno: number = 15;
+export const SwitUno: number = 50;
+export const InternetUno: number = 40;
+export const PracticaUno: number = 10;
 
 export default function Nota1() {
-
-  const nota1:number=110;
-
   return (
     <Box sx={{ flexGrow: 13, border: 0, }}>
       <Grid container spacing={3}
@@ -26,19 +27,19 @@ export default function Nota1() {
       >
         {/* varible  */}
         <Grid item >
-          <Item> {nota1} </Item>
+          <Item> {CalculoUno} </Item>
         </Grid>
         <Grid item >
-          <Item>20</Item>
+          <Item>{ExtraccionUno}</Item>
         </Grid>
         <Grid item >
-          <Item>30</Item>
+          <Item>{SwitUno}</Item>
         </Grid>
         <Grid item >
-          <Item>40</Item>
+          <Item>{InternetUno}</Item>
         </Grid>
         <Grid item >
-          <Item>50</Item>
+          <Item>{PracticaUno}</Item>
         </Grid>
       </Grid>
     </Box>

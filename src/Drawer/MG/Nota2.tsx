@@ -9,6 +9,13 @@ const Item = styled(Paper)(({ theme }) => ({
   textAlign: 'center',
   color: theme.palette.text.secondary,
 }));
+export const CalculoDos: number = 35;
+export const ExtraccionDos: number = 35;
+export const SwitDos: number = 30;
+export const InternetDos: number = 25;
+export const PracticaDos: number = 43;
+
+
 export default function Nota2() {
   return (
     <Box sx={{ flexGrow: 13, border: 0, }}>
@@ -20,19 +27,19 @@ export default function Nota2() {
       // alignItems="flex-start"
       >
         <Grid item >
-          <Item>10</Item>
+          <Item>{CalculoDos}</Item>
         </Grid>
         <Grid item >
-          <Item>20</Item>
+          <Item>{ExtraccionDos}</Item>
         </Grid>
         <Grid item >
-          <Item>30</Item>
+          <Item>{SwitDos}</Item>
         </Grid>
         <Grid item >
-          <Item>40</Item>
+          <Item>{InternetDos}</Item>
         </Grid>
         <Grid item >
-          <Item>50</Item>
+          <Item>{PracticaDos}</Item>
         </Grid>
       </Grid>
     </Box>
