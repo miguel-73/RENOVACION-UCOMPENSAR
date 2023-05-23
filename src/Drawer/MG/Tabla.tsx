@@ -7,6 +7,7 @@ import Nota1 from './Nota1';
 import Nota2 from './Nota2';
 import Nota3 from './Nota3';
 import Definitiva from './Definitiva';
+import Grafica from './Grafica';
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
     ...theme.typography.body2,
@@ -36,14 +37,16 @@ export default function Tabla() {
                     </Grid>
                 </Grid>
                 <div>
-                    <Grid container spacing={1} columns={16} border={1} alignItems="stretch" sx={{ height: 370 }}>
-                        <Grid item xs={3.2} sm={2.8} sx={{ height: '100%' }}>
+                    <Grid container spacing={1} columns={16} border={0} alignItems="stretch" >
+                       
+                        <Grid  item xs={3.2} sm={2.8} >
+                           
                             <Item style={{ backgroundColor: '#E6F2FF' }} sx={{ height: '100%' }}>
                                 <Grid style={{ marginBottom: '20px' }}>
                                     <Item  style={{  wordWrap: "break-word",backgroundColor: '#97CEEB', borderRadius: 20 }}>Codigo #</Item>
                                 </Grid>
-                                
                                 <Materias/>
+                                
 
                             </Item>
                         </Grid>
@@ -71,13 +74,21 @@ export default function Tabla() {
                                 <Nota3/>
                             </Item>
                         </Grid>
-                        <Grid item xs={3.2} sm={2} sx={{ height: '100%' }}>
-                            <Item style={{ backgroundColor: '#E6F2FF' }} sx={{ height: '100%' }}>
+                        <Grid item xs={3.2} sm={2} >
+                            <Item style={{ backgroundColor: '#E6F2FF' }} >
                                 <Grid style={{ marginBottom: '20px' }}>
                                     <Item  style={{  wordWrap: "break-word", backgroundColor: '#97CEEB', borderRadius: 20 }}>Definitiva</Item>
                                 </Grid>
                                 <Definitiva/>
                             </Item>
+                        </Grid>
+                        <Grid item >
+                            {/* <Item style={{ backgroundColor: '#E6F2FF' }} > */}
+                                <Grid style={{ marginBottom: '20px' }}>
+                                    {/* <Item  style={{  wordWrap: "break-word", backgroundColor: '#97CEEB', borderRadius: 20 }}>Definitiva</Item> */}
+                                </Grid>
+                                <Grafica/>
+                            {/* </Item> */}
                         </Grid>
                     </Grid>
                 </div>

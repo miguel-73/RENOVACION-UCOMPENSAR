@@ -10,75 +10,98 @@ const Item = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(0),
   textAlign: 'left',
   color: theme.palette.text.secondary,
-
 }));
 
 export default function Nota1() {
   return (
     <Box sx={{ flexGrow: 13, border: 0 }}>
-      <Grid container spacing={2} border={0}>
+      <Grid container spacing={2} border={0} >
+        
         <Grid item sx={{ display: "inline" }} xs={12} sm={12}>
-          <Item style={{
-            // overflow: "hidden",
-            wordWrap: "break-word",
-            fontSize: "14px"
-          }}>
-            {/* <h5> */}
-            43002C
-            <div />
-            calculo diferencial
-            {/* </h5> */}
-          </Item>
-          <Box my={2} /> {/* Espacio entre los dos items */}
-          <Item style={{
-            // overflow: "hidden",
-            wordWrap: "break-word",
-            fontSize: "14px",
-          }}>
-            <h5>
-              63126C
-              <div />
-              EXTRACCIÓN, TRANSFORMACIÓN Y CARGA DE DATOS
-            </h5>
-          </Item>
-          <Box my={2} /> {/* Espacio entre los dos items */}
+          <Box sx={{ flexGrow: 1 }} >
+            <Grid container spacing={2} >
 
-          <Item style={{
-            // overflow: "hidden",
-            wordWrap: "break-word",
-            fontSize: "14px"
-          }}>
-            {/* <h6> */}
-            Emotions
-            <div />
-            Interested, hesitant
-            {/* </h6> */}
-          </Item>
-          <Box my={2} /> {/* Espacio entre los dos items */}
-          <Item style={{
-            // overflow: "hidden",
-            wordWrap: "break-word", fontSize: "14px"
-          }}>
-            {/* <h6> */}
-            243036C
-            <div />
-            INTERNET DE LAS COSAS
-            {/* </h6> */}
-          </Item>
-          <Box my={2} /> {/* Espacio entre los dos items */}
-          <Item style={{
-            // overflow: "hidden",
-            wordWrap: "break-word",
-            fontSize: "14px"
-          }}>
-            {/* <h6> */}
-            123001C
-            <div />
-            PRÁCTICA I
-            {/* </h6>  */}
-          </Item>
+              <Grid item xs={6} sm={6} >
+                <Item style={{ wordWrap: "break-word", fontSize: "14px" }}>
+                  43002C
+                </Item>
+              </Grid>
+
+              <Grid item xs={6} sm={6}>
+                <Item style={{ wordWrap: "break-word", fontSize: "14px" }}>
+                  calculo diferencial
+                </Item>
+              </Grid>
+
+            </Grid>
+          </Box>
+          <Box my={3} /> {/* Espacio entre los dos items */}
+          <Box sx={{ flexGrow: 1 }}>
+            <Grid container spacing={2}>
+              <Grid item xs={6} sm={6}>
+                <Item style={{ wordWrap: "break-word", fontSize: "14px" }}>
+                  63126C
+                </Item>
+              </Grid>
+              <Grid item xs={6} sm={6}>
+                <Item style={{ wordWrap: "break-word", fontSize: "14px" }}>
+                  CARGA DE DATOS
+                </Item>
+              </Grid>
+            </Grid>
+          </Box>
+          <Box my={3} /> {/* Espacio entre los dos items */}
+          <Box sx={{ flexGrow: 1 }}>
+            <Grid container spacing={2}>
+              <Grid item xs={6} sm={6}>
+                <Item style={{ wordWrap: "break-word", fontSize: "14px" }}>
+                243036C
+                </Item>
+              </Grid>
+              <Grid item xs={6} sm={6}>
+                <Item style={{ wordWrap: "break-word", fontSize: "14px" }}>
+                INTERNET DE LAS COSAS
+                </Item>
+              </Grid>
+            </Grid>
+          </Box>
+          <Box my={3} /> {/* Espacio entre los dos items */}
+          <Box sx={{ flexGrow: 1 }}>
+            <Grid container spacing={2}>
+              <Grid item xs={6} sm={6}>
+                <Item style={{ wordWrap: "break-word", fontSize: "14px" }}>
+                  243036C
+                </Item>
+              </Grid>
+              <Grid item xs={6} sm={6}>
+                <Item style={{ wordWrap: "break-word", fontSize: "14px" }}>
+                PRÁCTICA I
+                </Item>
+              </Grid>
+            </Grid>
+          </Box>
+          <Box my={3} /> {/* Espacio entre los dos items */}
+          <Box sx={{ flexGrow: 1 }}>
+            <Grid container spacing={2}>
+              <Grid item xs={6} sm={6}>
+                <Item style={{ wordWrap: "break-word", fontSize: "14px" }}>
+                  123001C
+                </Item>
+              </Grid>
+              <Grid item xs={6} sm={6}>
+                <Item style={{ wordWrap: "break-word", fontSize: "14px" }}>
+                SWITCHING AND ROUTING
+                </Item>
+              </Grid>
+            </Grid>
+          </Box>
         </Grid>
       </Grid>
     </Box>
   );
 }
+
+
+
+
+

@@ -1,5 +1,5 @@
 import Carta from "./Carta";
-import Tabla from "./Tabla";
+    import Tabla from "./Tabla";
 import Titulo from "./Titulo";
 
 export default function Notas() {
@@ -8,7 +8,7 @@ export default function Notas() {
             <Carta />
             <Titulo />
             <Tabla />
-        </div>
+            </div>
     );
 }
 
