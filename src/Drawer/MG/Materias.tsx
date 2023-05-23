@@ -16,7 +16,7 @@ export default function Nota1() {
   return (
     <Box sx={{ flexGrow: 13, border: 0 }}>
       <Grid container spacing={2} border={0} >
-        
+
         <Grid item sx={{ display: "inline" }} xs={12} sm={12}>
           <Box sx={{ flexGrow: 1 }} >
             <Grid container spacing={2} >
@@ -55,12 +55,12 @@ export default function Nota1() {
             <Grid container spacing={2}>
               <Grid item xs={6} sm={6}>
                 <Item style={{ wordWrap: "break-word", fontSize: "14px" }}>
-                243036C
+                  243036C
                 </Item>
               </Grid>
               <Grid item xs={6} sm={6}>
                 <Item style={{ wordWrap: "break-word", fontSize: "14px" }}>
-                INTERNET DE LAS COSAS
+                  INTERNET DE LAS COSAS
                 </Item>
               </Grid>
             </Grid>
@@ -75,7 +75,7 @@ export default function Nota1() {
               </Grid>
               <Grid item xs={6} sm={6}>
                 <Item style={{ wordWrap: "break-word", fontSize: "14px" }}>
-                PRÁCTICA I
+                  PRÁCTICA I
                 </Item>
               </Grid>
             </Grid>
@@ -90,7 +90,7 @@ export default function Nota1() {
               </Grid>
               <Grid item xs={6} sm={6}>
                 <Item style={{ wordWrap: "break-word", fontSize: "14px" }}>
-                SWITCHING AND ROUTING
+                  SWITCHING AND ROUTING
                 </Item>
               </Grid>
             </Grid>

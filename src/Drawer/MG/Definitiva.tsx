@@ -6,7 +6,6 @@ import Grid from '@mui/material/Grid';
 import { CalculoUno, ExtraccionUno, InternetUno, PracticaUno, SwitUno } from './Nota1';
 import { CalculoDos, ExtraccionDos, InternetDos, PracticaDos, SwitDos } from './Nota2';
 import { CalculoTres, ExtraccionTres, InternetTres, PracticaTres, SwitTres } from './Nota3';
-
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
   ...theme.typography.body2,
@@ -25,8 +24,7 @@ export default function Definitiva() {
     <Box sx={{ flexGrow: 13, border: 0, }}>
       <Grid
         container spacing={3}
-        // container
-        direction="column"
+         direction="column"
         justifyContent="space-evenly"
       // alignItems="flex-start"
       >
