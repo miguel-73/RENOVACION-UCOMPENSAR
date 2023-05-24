@@ -10,6 +10,8 @@ export default function RutasDrawer() {
         <Route path={"/Inicio"} element={<FotoPerfilStudiante />} />
         <Route path={"/Notas"} element={<Notas />} />
         <Route path={"/Horario"} element={<BasicGrid />} />
+        {/* <Route path={"/Horario"} element={<BasicGrid />} /> */}
+
       </Routes>
     </div>
   );
