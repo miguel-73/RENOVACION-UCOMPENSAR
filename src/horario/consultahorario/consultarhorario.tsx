@@ -17,7 +17,7 @@ export default function ConsultarHorario() {
             height: "400px",
           }} //largo
         >
-          <AppBar position="static" sx={{ backgroundColor: "#C0C0C0" }}>
+          <AppBar position="static" sx={{ backgroundColor: "#FF9142" }}>
             <Toolbar>
               <Typography
                 variant="h6"

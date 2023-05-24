@@ -5,7 +5,7 @@ const HorarioTabla: React.FC = () => {
   const horario = [
     {
       hora: "08:00",
-      lunes: "Clase 1",
+      lunes: "Clase 1779",
       martes: "Clase 2",
       miercoles: "Clase 3",
       jueves: "Clase 4",
@@ -13,7 +13,23 @@ const HorarioTabla: React.FC = () => {
     },
     {
       hora: "09:00",
-      lunes: "Clase 6",
+      lunes: "hola",
+      martes: "Clase 7",
+      miercoles: "Clase 8",
+      jueves: "Clase 9",
+      viernes: "Clase 10",
+    },
+    {
+      hora: "10:00",
+      lunes: "hola",
+      martes: "Clase 7",
+      miercoles: "Clase 8",
+      jueves: "Clase 9",
+      viernes: "Clase 10",
+    },
+    {
+      hora: "09:00",
+      lunes: "hola",
       martes: "Clase 7",
       miercoles: "Clase 8",
       jueves: "Clase 9",
@@ -21,7 +37,6 @@ const HorarioTabla: React.FC = () => {
     },
     // Agrega más filas de horario según necesites
   ];
-
   return (
     <Grid container spacing={1}>
       {/* Encabezados de días */}
@@ -32,7 +47,7 @@ const HorarioTabla: React.FC = () => {
             align="center"
             sx={{ fontWeight: "bold" }}
           >
-            Hora
+            Materia
           </Typography>
         </Paper>
       </Grid>
@@ -95,13 +110,7 @@ const HorarioTabla: React.FC = () => {
       {/* Filas de horario */}
       {horario.map((fila) => (
         <React.Fragment key={fila.hora}>
-          <Grid item xs={2}>
-            <Paper>
-              <Typography variant="body1" align="center">
-                {fila.hora}
-              </Typography>
-            </Paper>
-          </Grid>
+          
           <Grid item xs={2}>
             <Paper>
               <Typography variant="body1" align="center">
@@ -137,6 +146,63 @@ const HorarioTabla: React.FC = () => {
               </Typography>
             </Paper>
           </Grid>
+          <Grid item xs={2}>
+            <Paper>
+              <Typography variant="body1" align="center">
+                {fila.lunes}
+              </Typography>
+            </Paper>
+          </Grid>
+
+          <Grid item xs={2}>
+            <Paper>
+              <Typography variant="body1" align="center">
+                {fila.martes}
+              </Typography>
+            </Paper>
+          </Grid>
+
+
+          <Grid item xs={2}>
+            <Paper>
+              <Typography variant="body1" align="center">
+                {fila.miercoles}
+              </Typography>
+            </Paper>
+          </Grid>
+
+          <Grid item xs={2}>
+            <Paper>
+              <Typography variant="body1" align="center">
+                {fila.jueves}
+              </Typography>
+            </Paper>
+          </Grid>
+         
+          <Grid item xs={2}>
+            <Paper>
+              <Typography variant="body1" align="center">
+                {fila.viernes}
+              </Typography>
+            </Paper>
+          </Grid>
+
+          <Grid item xs={2}>
+            <Paper>
+              <Typography variant="body1" align="center">
+                {fila.martes}
+              </Typography>
+            </Paper>
+          </Grid>
+          
+          <Grid item xs={2}>
+            <Paper>
+              <Typography variant="body1" align="center">
+                {fila.miercoles}
+              </Typography>
+            </Paper>
+          </Grid>
+
         </React.Fragment>
       ))}
     </Grid>
