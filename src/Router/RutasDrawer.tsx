@@ -1,6 +1,7 @@
-import { Routes, Route } from "react-router-dom";
-import FotoPerfilStudiante from "../Inicio-drawer/DatosPersonales";
-import Notas from "../Drawer/MG/Notas";
+
+import { Routes, Route } from 'react-router-dom'
+import FotoPerfilStudiante from '../Inicio-drawer/DatosPersonales';
+import Notas from '../MG/Notas';
 import BasicGrid from "../horario/consultahorario/grid";
 
 export default function RutasDrawer() {
