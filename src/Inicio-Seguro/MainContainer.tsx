@@ -21,7 +21,10 @@ function ContainerX() {
                 position: "auto",
                 marginBottom: "20px",
             }}>
-
+            
+                
+            
+          
             <Logo />
             <SistemaGestion />
             <ContenidoPrincipal />
