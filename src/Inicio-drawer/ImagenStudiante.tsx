@@ -4,4 +4,4 @@ export default function ImagenStudiante() {
    <img src='../imagenes/7.jpg  'style={{ height: "100%"}}/>
     );
    
-   }
+   }    

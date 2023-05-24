@@ -29,7 +29,6 @@ export default function FotoPerfilStudiante() {
               <Box
                 sx={{
                   position: "auto",
-                  backgroundColor:'#8B8B8B',
                   width: "100%",
                   height: 40,
                   borderColor:"white"
@@ -66,7 +65,7 @@ export default function FotoPerfilStudiante() {
             sx={{
               position: "auto",
               border: 3,
-              width: "244px",
+              width: "auto",
               height: "300px",
               margin: 3,
             }}

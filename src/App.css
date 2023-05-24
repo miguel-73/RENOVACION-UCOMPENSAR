@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+/* body {
+  background-image: url("../public/Images/Fondo1.png");
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-position: center;
+  position: relative;
+  padding: 100;
+} */
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -32,6 +41,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

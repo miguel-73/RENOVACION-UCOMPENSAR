@@ -132,17 +132,19 @@ export default function PersistentDrawerStiven() {
         anchor="left"
         open={open}
       >
-        <DrawerHeader>
+        <DrawerHeader>  <ImagenCompensarMenu />
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === "ltr" ? (
               <ChevronLeftIcon />
             ) : (
               <ChevronRightIcon />
             )}
+          
           </IconButton>
+          
         </DrawerHeader>
 
-        <ImagenCompensarMenu />
+        
 
         <Divider />
 
@@ -150,12 +152,22 @@ export default function PersistentDrawerStiven() {
           {links.map((text, index) => {
             return (
               <ListItem key={text} disablePadding>
-                <ListItemButton>
+                <ListItemButton >
                   <ListItemIcon>
                     {index % 2 === 0 ? <FolderSpecialIcon /> : <FolderSpecialIcon />}
                   </ListItemIcon>
-                  <Link to={`/${text.toLowerCase()}`}>
-                    <ListItemText primary={text.toUpperCase()} />
+                  <Link to={`/${text.toLowerCase()}`}  /*target="_black" */ style={{ textDecoration: "none"}}>
+                    <ListItemText primary={text.toUpperCase()}
+                     style={{
+                      color: "#FF9142",
+                       border: "0px solid black",
+                        backgroundColor:"#ededed", 
+                        borderRadius: "10px",
+                         padding: "2px",
+                         margin:-10,
+                         width:"auto",
+                    
+                      }} />
                   </Link>
                 </ListItemButton>
               </ListItem>
