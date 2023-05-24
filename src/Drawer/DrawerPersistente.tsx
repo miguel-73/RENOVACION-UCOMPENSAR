@@ -156,7 +156,7 @@ export default function PersistentDrawerStiven() {
                   <ListItemIcon>
                     {index % 2 === 0 ? <FolderSpecialIcon /> : <FolderSpecialIcon />}
                   </ListItemIcon>
-                  <Link to={`/${text.toLowerCase()}`}  /*target="_black" */ style={{ textDecoration: "none"}}>
+                  <Link to={`/${text.toLowerCase()}`}  /*target="_black" */ style={{ textDecoration: "none"}}> 
                     <ListItemText primary={text.toUpperCase()}
                      style={{
                       color: "#FF9142",
@@ -171,7 +171,7 @@ export default function PersistentDrawerStiven() {
                   </Link>
                 </ListItemButton>
               </ListItem>
-            )
+            );
           })}
         </List>
         <Divider />
