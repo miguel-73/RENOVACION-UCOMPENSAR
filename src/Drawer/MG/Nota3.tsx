@@ -15,6 +15,7 @@ export const ExtraccionTres: number = 35;
 export const SwitTres: number = 30;
 export const InternetTres: number = 50;
 export const PracticaTres: number = 46;
+export const PromedioTres: number = ((CalculoTres + ExtraccionTres + InternetTres + PracticaTres + SwitTres) / 5);
 
 export default function Nota3() {
     return (
@@ -40,6 +41,9 @@ export default function Nota3() {
                 </Grid>
                 <Grid item >
                     <Item>{PracticaTres}</Item>
+                </Grid>
+                <Grid item >
+                    <Item>{PromedioTres} </Item>
                 </Grid>
             </Grid>
         </Box>

@@ -18,7 +18,7 @@ export const ExtraccionDefinitiva: number = ((ExtraccionUno * 0.2) + (Extraccion
 export const SwitDefinitiva: number = ((SwitUno * 0.2) + (SwitDos * 0.35) + (SwitTres * 0.45));
 export const InternetDefinitiva: number = ((InternetUno * 0.2) + (InternetDos * 0.35) + (InternetTres * 0.45));
 export const PracticaDefinitiva: number = ((PracticaUno * 0.2) + (PracticaDos * 0.35) + (PracticaTres * 0.45));
-
+export const PromedioDefinitiva: number = ((CalculoDefinitiva + ExtraccionDefinitiva + InternetDefinitiva + PracticaDefinitiva + SwitDefinitiva) / 5);
 export default function Definitiva() {
   return (
     <Box sx={{ flexGrow: 13, border: 0, }}>
@@ -42,6 +42,9 @@ export default function Definitiva() {
         </Grid>
         <Grid item >
           <Item>{PracticaDefinitiva}</Item>
+        </Grid>
+        <Grid item >
+          <Item> {PromedioDefinitiva}</Item>
         </Grid>
       </Grid>
     </Box>

@@ -16,7 +16,7 @@ export default function Titulo() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid style={{ marginBottom: '20px', marginTop: '-9px' }} container spacing={3}>
-        <Grid item xs={12} sm={8.1} >
+        <Grid item xs={12} sm={12} >
           <Item>Notas academicas </Item>
         </Grid>
       </Grid>

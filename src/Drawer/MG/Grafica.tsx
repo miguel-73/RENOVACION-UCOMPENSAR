@@ -1,17 +1,13 @@
 
 import React, { useState, useEffect } from 'react';
 import { Chart } from 'primereact/chart';
-import { CalculoUno, ExtraccionUno, InternetUno, PracticaUno, SwitUno } from './Nota1';
-import { CalculoDos, ExtraccionDos, InternetDos, PracticaDos, SwitDos } from './Nota2';
-import { CalculoTres, ExtraccionTres, InternetTres, PracticaTres, SwitTres } from './Nota3';
-import { CalculoDefinitiva, ExtraccionDefinitiva, InternetDefinitiva, PracticaDefinitiva, SwitDefinitiva } from './Definitiva';
+import { CalculoUno, ExtraccionUno, InternetUno, PracticaUno, PromedioUno, SwitUno } from './Nota1';
+import { CalculoDos, ExtraccionDos, InternetDos, PracticaDos, PromedioDos, SwitDos } from './Nota2';
+import { CalculoTres, ExtraccionTres, InternetTres, PracticaTres, PromedioTres, SwitTres } from './Nota3';
+import { CalculoDefinitiva, ExtraccionDefinitiva, InternetDefinitiva, PracticaDefinitiva, PromedioDefinitiva, SwitDefinitiva } from './Definitiva';
 export default function StackedBarDemo() {
     const [chartData, setChartData] = useState({});
     const [chartOptions, setChartOptions] = useState({});
-    const PromedioUno: number = ((CalculoUno + ExtraccionUno + InternetUno + PracticaUno + SwitUno) / 5);
-    const PromedioDos: number = ((CalculoDos + ExtraccionDos + InternetDos + PracticaDos + SwitDos) / 5);
-    const PromedioTres: number = ((CalculoTres + ExtraccionTres + InternetTres + PracticaTres + SwitTres) / 5);
-    const PromedioDefinitiva: number = ((CalculoDefinitiva + ExtraccionDefinitiva + InternetDefinitiva + PracticaDefinitiva + SwitDefinitiva) / 5);
     useEffect(() => {
         const documentStyle = getComputedStyle(document.documentElement);
         const textColor = documentStyle.getPropertyValue('--text-color');

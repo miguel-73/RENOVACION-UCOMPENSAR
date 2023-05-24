@@ -14,6 +14,8 @@ export const ExtraccionDos: number = 35;
 export const SwitDos: number = 30;
 export const InternetDos: number = 25;
 export const PracticaDos: number = 43;
+export const PromedioDos: number = ((CalculoDos + ExtraccionDos + InternetDos + PracticaDos + SwitDos) / 5);
+
 export default function Nota2() {
   return (
     <Box sx={{ flexGrow: 13, border: 0, }}>
@@ -38,6 +40,9 @@ export default function Nota2() {
         </Grid>
         <Grid item >
           <Item>{PracticaDos}</Item>
+        </Grid>
+        <Grid item >
+          <Item>{PromedioDos}</Item>
         </Grid>
       </Grid>
     </Box>

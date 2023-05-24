@@ -19,76 +19,84 @@ export default function Tabla() {
     return (
         <>
             <Box sx={{ flexGrow: 1 }}>
-                <Grid container spacing={1} columns={16} border={0} alignItems="stretch">
-                    <Grid item xs={3.2} sm={2.8} >
-                        <Item  style={{ wordWrap: "break-word", backgroundColor: '#ff7700', borderRadius: 20 }}>Materia</Item>
-                    </Grid>
-                    <Grid item xs={3.2} sm={2} >
-                        <Item style={{  wordWrap: "break-word", backgroundColor: '#ff7700', borderRadius: 20 }}>Momento #1</Item>
-                    </Grid>
-                    <Grid item xs={3.2} sm={2}>
+                {/* <Grid container spacing={3} border={0} alignItems="stretch">     */}
+                {/* <Grid item xs={5.9} sm={2.3} >
+                        <Item style={{ wordWrap: "break-word", backgroundColor: '#ff7700', borderRadius: 20 }}>Materia</Item>
+                    </Grid> */}
+                {/* <Grid item xs={2.9} sm={1.6} >
+                        <Item style={{ wordWrap: "break-word", backgroundColor: '#ff7700', borderRadius: 20 }}>Momento #1</Item>
+                    </Grid> */}
+                {/* <Grid item xs={2.9} sm={1.5}>
                         <Item style={{ wordWrap: "break-word", backgroundColor: '#ff7700', borderRadius: 20 }}>Momento #2</Item>
-                    </Grid>
-                    <Grid item xs={3.2} sm={2}>
-                        <Item style={{  wordWrap: "break-word", backgroundColor: '#ff7700', borderRadius: 20 }}>Momento #3</Item>
-                    </Grid>
-                    <Grid item xs={3.2} sm={2}>
-                        <Item style={{  wordWrap: "break-word",backgroundColor: '#ff7700', borderRadius: 20 }}>Definitiva</Item>
-                    </Grid>
-                </Grid>
+                    </Grid> */}
+                {/* <Grid item xs={3.2} sm={1.6}>
+                        <Item style={{ wordWrap: "break-word", backgroundColor: '#ff7700', borderRadius: 20 }}>Momento #3</Item>
+                    </Grid> */}
+                {/* <Grid item xs={3.2} sm={1.6}>
+                        <Item style={{ wordWrap: "break-word", backgroundColor: '#ff7700', borderRadius: 20 }}>corte final</Item>
+                    </Grid> */}
+                {/* <Grid item xs={3.2} sm={3.4}>
+                        <Item style={{ wordWrap: "break-word", backgroundColor: '#ff7700', borderRadius: 20 }}>Acomulado de notas </Item>
+                    </Grid> */}
+                {/* </Grid> */}
                 <div>
-                    <Grid container spacing={1} columns={16} border={0} alignItems="stretch" >
-                       
-                        <Grid  item xs={3.2} sm={2.8} >
-                           
-                            <Item style={{ backgroundColor: '#E6F2FF' }} sx={{ height: '100%' }}>
-                                <Grid style={{ marginBottom: '20px' }}>
-                                    <Item  style={{  wordWrap: "break-word",backgroundColor: '#97CEEB', borderRadius: 20 }}>Codigo #</Item>
+                    <Grid container spacing={1} columns={15} border={0} alignItems="stretch" >
+                        <Grid item xs={10} sm={2.8} >
+                            <Item style={{ wordWrap: "break-word", backgroundColor: '#ff7700', borderRadius: 20 }}> Materia</Item>
+                            <Item style={{ backgroundColor: '#E6F2FF' }} sx={{ height: '92%' }}>
+                                <Grid style={{ marginBottom: '10px' }}>
+                                    <Item style={{ wordWrap: "break-word", backgroundColor: '#97CEEB', borderRadius: 20 }}>Codigo #</Item>
                                 </Grid>
-                                <Materias/>
-                                
-
+                                <Materias />
                             </Item>
                         </Grid>
-                        <Grid item xs={3.2} sm={2} sx={{ height: '100%' }}>
+                        <Grid item xs={5} sm={2} sx={{ height: '100%' }}>
+                            <Item style={{ wordWrap: "break-word", backgroundColor: '#ff7700', borderRadius: 20 }}>Momento #1</Item>
                             <Item style={{ backgroundColor: '#E6F2FF' }} sx={{ height: '100%' }}>
                                 <Grid style={{ marginBottom: '20px' }}>
                                     <Item style={{ backgroundColor: '#97CEEB', borderRadius: 20 }}>20%</Item>
                                 </Grid>
-                                <Nota1/>
+                                <Nota1 />
                             </Item>
                         </Grid>
-                        <Grid item xs={3.2} sm={2} sx={{ height: '100%' }}>
+                        <Grid item xs={5} sm={2} sx={{ height: '100%' }}>
+                            <Item style={{ wordWrap: "break-word", backgroundColor: '#ff7700', borderRadius: 20 }}>Momento #2</Item>
                             <Item style={{ backgroundColor: '#E6F2FF' }} sx={{ height: '100%' }}>
                                 <Grid style={{ marginBottom: '20px' }}>
                                     <Item style={{ backgroundColor: '#97CEEB', borderRadius: 20 }}>35%</Item>
                                 </Grid>
-                                <Nota2/>
+                                <Nota2 />
                             </Item>
                         </Grid>
-                        <Grid item xs={3.2} sm={2} sx={{ height: '100%' }}>
+                        <Grid item xs={5} sm={2} sx={{ height: '100%' }}>
+                            <Item style={{ wordWrap: "break-word", backgroundColor: '#ff7700', borderRadius: 20 }}>Momento #3</Item>
+
                             <Item style={{ backgroundColor: '#E6F2FF' }} sx={{ height: '100%' }}>
                                 <Grid style={{ marginBottom: '20px' }}>
                                     <Item style={{ backgroundColor: '#97CEEB', borderRadius: 20 }}>45%</Item>
                                 </Grid>
-                                <Nota3/>
+                                <Nota3 />
                             </Item>
                         </Grid>
-                        <Grid item xs={3.2} sm={2} >
+                        <Grid item xs={5} sm={2} >
+                            <Item style={{ wordWrap: "break-word", backgroundColor: '#ff7700', borderRadius: 20 }}>corte final</Item>
+
                             <Item style={{ backgroundColor: '#E6F2FF' }} >
                                 <Grid style={{ marginBottom: '20px' }}>
-                                    <Item  style={{  wordWrap: "break-word", backgroundColor: '#97CEEB', borderRadius: 20 }}>Definitiva</Item>
+                                    <Item style={{ wordWrap: "break-word", backgroundColor: '#97CEEB', borderRadius: 20 }}>Definitiva</Item>
                                 </Grid>
-                                <Definitiva/>
+                                <Definitiva />
                             </Item>
                         </Grid>
-                        <Grid item >
-                            {/* <Item style={{ backgroundColor: '#E6F2FF' }} > */}
+                        <Grid item xs={15} sm={4.2}>
+                            <Item style={{ wordWrap: "break-word", backgroundColor: '#ff7700', borderRadius: 20 }}>Acomulado de notas </Item>
+
+                            <Item style={{ backgroundColor: '#E6F2FF' }} >
                                 <Grid style={{ marginBottom: '20px' }}>
                                     {/* <Item  style={{  wordWrap: "break-word", backgroundColor: '#97CEEB', borderRadius: 20 }}>Definitiva</Item> */}
                                 </Grid>
-                                <Grafica/>
-                            {/* </Item> */}
+                                <Grafica />
+                            </Item>
                         </Grid>
                     </Grid>
                 </div>
