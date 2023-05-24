@@ -160,10 +160,11 @@ export default function PersistentDrawerStiven() {
                     <ListItemText primary={text.toUpperCase()}
                      style={{
                       color: "#FF9142",
-                       border: "1px solid black",
+                       border: "0px solid black",
                         backgroundColor:"#ededed", 
                         borderRadius: "10px",
-                         padding: "auto",
+                         padding: "2px",
+                         margin:-10,
                          width:"auto",
                     
                       }} />
